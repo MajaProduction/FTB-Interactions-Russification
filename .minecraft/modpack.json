@@ -1,0 +1,143 @@
+{
+    "synopsis": "Do you want to traverse the dark star Aurelia, scavenging it's dungeons for rare technology...",
+    "description": "Do you want to traverse the dark star Aurelia, scavenging it's dungeons for rare technology while fighting off Eldritch Praetors? How about draining the blue vitriol oceans of Euclydes to feed the copper consumption of your increasingly large factories? Have you ever made a floating reincarnation prison for the Ender Dragon, harvesting its heart to empower your weapons and armor? Or watered your flowers with infused starlight and diesel? Do you actually want to know what happens when you submerge a Mighty Ender Chicken in magical anti-matter? The journey to answer these questions isn't going to be a short one.  \n  \n  \nFTB Interactions is the largest and most ambitious progression pack FTB has developed to date. The pack was designed to encourage cross-mod interactions to solve logistical challenges, defeat buffed mobs, outright cheese traditional obstacles, and even automate the killing of bosses. It's a progression and quest driven pack that is targetted towards people looking for a long term challenge for themselves or in a server setting with teams in mind.  \n  \n  \nMany large well-known mods feature in the pack, foremost among them is Gregtech: Community Edition which forms as the backbone of the pack's progression, while mods like Thermal Expansion, Astral Sorcery, EnderIO, and Blood Magic play supporting roles. Over 20,000 lines of unique scripting was used to eliminate redundant materials or blocks (who needs 10 furnaces from 10 mods?) to make sure there was a polished, sensible experience when exploring how mods interact with each other. On top of that, traditional progression of mods have been flipped over their head to encourage new playstyles or to better balance their functionality in a large pack.  \n  ",
+    "art": [
+        {
+            "width": 1024,
+            "height": 1024,
+            "compressed": true,
+            "url": "https://apps.modpacks.ch/modpacks/art/1/interactions.png",
+            "sha1": "5d6f89aa0a4ada31b1f63ea8f08cc1248a59c9d6",
+            "size": 1635555,
+            "id": 130,
+            "type": "square",
+            "updated": 1594851232
+        },
+        {
+            "width": 1920,
+            "height": 1080,
+            "compressed": true,
+            "url": "https://apps.modpacks.ch/modpacks/art/1/008.jpg",
+            "sha1": "3bc3e628bd0ec5879874f765a2c688fd8f7425a3",
+            "size": 375533,
+            "id": 131,
+            "type": "splash",
+            "updated": 1594851232
+        }
+    ],
+    "links": [
+        {
+            "id": 9,
+            "name": "Direwolf20 plays FTB Interactions 2.0",
+            "link": "https://www.youtube.com/watch?v=V-3OnXG__EM",
+            "type": "video"
+        }
+    ],
+    "authors": [
+        {
+            "website": "",
+            "id": 8,
+            "name": "FTB Team",
+            "type": "team",
+            "updated": 1585874706
+        }
+    ],
+    "versions": [
+        {
+            "specs": {
+                "id": 103,
+                "minimum": 4250,
+                "recommended": 5500
+            },
+            "id": 89,
+            "name": "2.0.4",
+            "type": "Release",
+            "updated": 1595594881
+        },
+        {
+            "specs": {
+                "id": 106,
+                "minimum": 4250,
+                "recommended": 5500
+            },
+            "id": 92,
+            "name": "2.0.5",
+            "type": "Release",
+            "updated": 1596222905
+        },
+        {
+            "specs": {
+                "id": 109,
+                "minimum": 4250,
+                "recommended": 5500
+            },
+            "id": 95,
+            "name": "2.0.6",
+            "type": "Release",
+            "updated": 1596828082
+        },
+        {
+            "specs": {
+                "id": 110,
+                "minimum": 4250,
+                "recommended": 5500
+            },
+            "id": 96,
+            "name": "2.0.7",
+            "type": "Release",
+            "updated": 1597510238
+        }
+    ],
+    "installs": 36424,
+    "plays": 204774,
+    "featured": false,
+    "refreshed": 1598172626,
+    "notification": "",
+    "rating": {
+        "id": -1,
+        "configured": false,
+        "verified": false,
+        "age": 12,
+        "gambling": false,
+        "frightening": false,
+        "alcoholdrugs": false,
+        "nuditysexual": false,
+        "sterotypeshate": false,
+        "languageviolence": false
+    },
+    "status": "success",
+    "id": 5,
+    "name": "FTB Interactions",
+    "type": "release",
+    "updated": 1585736642,
+    "tags": [
+        {
+            "id": 13,
+            "name": "Tech"
+        },
+        {
+            "id": 9,
+            "name": "FTB"
+        },
+        {
+            "id": 6,
+            "name": "1.12.2"
+        },
+        {
+            "id": 12,
+            "name": "Magic"
+        },
+        {
+            "id": 14,
+            "name": "Questing"
+        },
+        {
+            "id": 23,
+            "name": "Exploration"
+        },
+        {
+            "id": 26,
+            "name": "Combat"
+        }
+    ]
+}

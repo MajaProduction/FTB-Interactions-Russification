@@ -1,0 +1,28 @@
+{
+	title: "{interactions.bdc0ae1a.1b10cc2d.title}",
+	x: 4.0d,
+	y: -0.5d,
+	shape: "square",
+	description: "{interactions.bdc0ae1a.1b10cc2d.description}",
+	dependencies: [
+		"b1dded11"
+	],
+	tasks: [{
+		uid: "0101f9ce",
+		type: "item",
+		items: [{
+			item: "botania:pool 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "03e38897",
+		type: "item",
+		item: "botania:pool 1 2",
+		count: 3
+	},
+	{
+		uid: "49f30432",
+		type: "item",
+		item: "botania:distributor"
+	}]
+}

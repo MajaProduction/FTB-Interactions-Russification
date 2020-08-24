@@ -1,0 +1,36 @@
+{
+	title: "{interactions.40159cc8.79bca20b.title}",
+	icon: "astralsorcery:blockcelestialgateway",
+	x: 2.5d,
+	y: -22.0d,
+	shape: "rsquare",
+	description: "{interactions.40159cc8.79bca20b.description}",
+	text: [
+		"{interactions.40159cc8.79bca20b.text.0}"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e4050539",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockcelestialgateway"
+		}]
+	}],
+	rewards: [{
+		uid: "92da5dff",
+		type: "item",
+		item: "astralsorcery:blockcelestialgateway"
+	},
+	{
+		uid: "f8774a4b",
+		type: "item",
+		item: "astralsorcery:blockblackmarble",
+		count: 50
+	},
+	{
+		uid: "0062ce39",
+		type: "item",
+		item: "astralsorcery:blockmarble",
+		count: 64
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "{interactions.logistics.mecontroller.title}",
+	x: -5.5d,
+	y: 1.5d,
+	description: "{interactions.logistics.mecontroller.description}",
+	text: [
+		"{interactions.logistics.mecontroller.text.0}"
+	],
+	dependencies: [
+		"f1db3ede",
+		"39d33b3e"
+	],
+	tasks: [{
+		uid: "a4a93704",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "ece7a4aa",
+		type: "item",
+		team_reward: true,
+		item: "appliedenergistics2:controller",
+		count: 7
+	}]
+}

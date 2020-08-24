@@ -1,0 +1,21 @@
+{
+	x: -4.0d,
+	y: 2.0d,
+	dependencies: [
+		"10775b47",
+		"80eb1570"
+	],
+	tasks: [{
+		uid: "89fe9402",
+		type: "item",
+		items: [{
+			item: "botania:livingwood"
+		}]
+	}],
+	rewards: [{
+		uid: "f6a06f90",
+		type: "item",
+		item: "botania:livingwood",
+		count: 16
+	}]
+}

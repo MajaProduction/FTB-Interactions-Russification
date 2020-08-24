@@ -1,0 +1,50 @@
+{
+	x: 0.0d,
+	y: 1.5d,
+	text: [
+		"{interactions.28fb9cd4.e42d16d8.text.0}",
+		"{interactions.28fb9cd4.e42d16d8.text.1}"
+	],
+	dependencies: [
+		"de2a21ac"
+	],
+	tasks: [{
+		uid: "267386ed",
+		type: "item",
+		items: [{
+			item: "astralsorcery:blockcustomore"
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5570085101611273969L,
+					AS_Amulet_HolderMost: 5678865977197479355L
+				}
+			},
+			id: "astralsorcery:itemrockcrystalsimple",
+			tag: {
+				astralsorcery: {
+					crystalProperties: {
+						collectiveCapability: 100,
+						size: 400,
+						fract: 0,
+						purity: 100,
+						sizeOverride: -1
+					}
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "16818b1a",
+		type: "item",
+		item: "minecraft:dye 1 4",
+		count: 8
+	},
+	{
+		uid: "e95a22e7",
+		type: "xp_levels",
+		xp_levels: 2
+	}]
+}

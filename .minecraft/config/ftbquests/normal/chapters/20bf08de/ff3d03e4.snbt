@@ -1,0 +1,24 @@
+{
+	x: -2.5d,
+	y: -9.0d,
+	shape: "rsquare",
+	description: "{interactions.20bf08de.ff3d03e4.description}",
+	tasks: [{
+		uid: "fc2d91a0",
+		type: "item",
+		items: [{
+			item: "thaumcraft:amber"
+		}]
+	}],
+	rewards: [{
+		uid: "e8696590",
+		type: "item",
+		item: "thaumcraft:amber",
+		count: 8
+	},
+	{
+		uid: "f669e961",
+		type: "item",
+		item: "harvestcraft:maplesyrupwafflesitem"
+	}]
+}

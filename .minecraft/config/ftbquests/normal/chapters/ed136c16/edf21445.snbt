@@ -1,0 +1,12 @@
+{
+	title: "Visual Guide on one of the many ways to automate Antimatter production",
+	icon: "animus:blockantimatter",
+	x: -11.5d,
+	y: 2.0d,
+	shape: "gear",
+	custom_click: "https://www.youtube.com/watch?v=SuxWRe5F9UU",
+	dependencies: [
+		"59166bbf"
+	],
+	optional: true
+}

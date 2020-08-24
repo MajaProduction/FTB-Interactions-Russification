@@ -1,0 +1,179 @@
+<Asteroids>
+	<asteroid name="Small Asteroid" distance="3" mass="500" massVariability="0.5" minLevel="0" probability="10" richness="0.5" richnessVariability="0.5" timeMultiplier=".5">
+		<ore itemStack="gregtech:ore_pyrite_0" chance="15" />
+		<ore itemStack="gregtech:ore_malachite_0" chance="15" />
+		<ore itemStack="gregtech:ore_cassiterite_sand_0 3" chance="15" />
+		<ore itemStack="gregtech:ore_apatite_0" chance="15" />
+		<ore itemStack="gregtech:ore_lapis_0" chance="15" />	
+		<ore itemStack="gregtech:ore_redstone_0 3" chance="25" />	
+	</asteroid>
+	<asteroid name="Medium Asteroid" distance="8" mass="1000" massVariability="0.5" minLevel="0" probability="15" richness="0.5" richnessVariability="0.5" timeMultiplier=".75">
+		<ore itemStack="gregtech:ore_pyrite_0" chance="15" />
+		<ore itemStack="gregtech:ore_malachite_0" chance="15" />
+		<ore itemStack="gregtech:ore_cassiterite_sand_0 3" chance="15" />
+		<ore itemStack="gregtech:ore_apatite_0" chance="15" />
+		<ore itemStack="gregtech:ore_lapis_0" chance="15" />
+		<ore itemStack="gregtech:ore_redstone_0 3" chance="25" />			
+	</asteroid>
+	<asteroid name="Large Asteroid" distance="12" mass="2000" massVariability="0.5" minLevel="0" probability="20" richness="0.5" richnessVariability="0.5">
+		<ore itemStack="gregtech:ore_pyrite_0" chance="15" />
+		<ore itemStack="gregtech:ore_malachite_0" chance="15" />
+		<ore itemStack="gregtech:ore_cassiterite_sand_0 3" chance="15" />
+		<ore itemStack="gregtech:ore_apatite_0" chance="15" />
+		<ore itemStack="gregtech:ore_lapis_0" chance="15" />
+		<ore itemStack="gregtech:ore_redstone_0 3" chance="25" />	
+	</asteroid>	
+	<asteroid name="Copper Rich Asteroid" distance="12" mass="2000" massVariability="0.5" minLevel="0" probability="20" richness="0.5" richnessVariability="0.5">
+		<ore itemStack="gregtech:ore_malachite_0" chance="25" />
+		<ore itemStack="gregtech:ore_chalcopyrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_copper_0" chance="25" />
+		<ore itemStack="gregtech:ore_tetrahedrite_0" chance="25" />
+		
+	</asteroid>	
+	<asteroid name="Iron Rich Asteroid" distance="12" mass="2000" massVariability="0.5" minLevel="0" probability="20" richness="0.5" richnessVariability="0.5">
+		<ore itemStack="gregtech:mineral" chance="10" />
+		<ore itemStack="gregtech:ore_malachite_0" chance="25" />
+		<ore itemStack="gregtech:ore_chalcopyrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_copper_0" chance="25" />
+		<ore itemStack="gregtech:ore_tetrahedrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_redstone_0 3" chance="25" />
+	
+	</asteroid>		
+	<asteroid name="Tin Rich Asteroid" distance="12" mass="2000" massVariability="0.5" minLevel="0" probability="20" richness="0.5" richnessVariability="0.5">
+		<ore itemStack="gregtech:meta_item_1 2003" chance="5" />
+		<ore itemStack="gregtech:ore_pyrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_brown_limonite_0" chance="25" />
+		<ore itemStack="gregtech:ore_iron_0" chance="25" />
+		<ore itemStack="gregtech:ore_banded_iron_0" chance="25" /> 
+		<ore itemStack="gregtech:ore_yellow_limonite_0" chance="25" />
+		<ore itemStack="gregtech:ore_magnetite_0" chance="25" />
+		<ore itemStack="gregtech:ore_redstone_0 3" chance="25" />			
+	</asteroid>		
+	<asteroid name="Gold Rich Asteroid" distance="15" mass="1500" massVariability="0.5" minLevel="0" probability="17" richness="0.5" richnessVariability="0.5">
+		<ore itemStack="gregtech:compressed_10 7" chance="1" />
+		<ore itemStack="gregtech:compressed_10 6" chance="1" />
+		<ore itemStack="gregtech:ore_magnetite_0" chance="25" />
+		<ore itemStack="gregtech:ore_vanadium_magnetite_0" chance="25" />
+		<ore itemStack="contenttweaker:sub_block_holder_3 12" chance="25" />
+		<ore itemStack="gregtech:ore_gold_0" chance="25" />
+		<ore itemStack="gregtech:ore_silver_0" chance="40" />
+		<ore itemStack="gregtech:ore_galena_0" chance="35" />
+		<ore itemStack="gregtech:ore_garnet_yellow_0" chance="20" />			
+		<ore itemStack="gregtech:ore_topaz_0" chance="20" />			
+	</asteroid>		
+	<asteroid name="Amorphous Gem Rich Asteroid" distance="15" mass="1500" massVariability="0.5" minLevel="0" probability="15" richness="0.5" richnessVariability="0.5">
+		<ore itemStack="gregtech:mineral" chance="10" />
+		<ore itemStack="gregtech:granite 1" chance="10" />
+		<ore itemStack="gregtech:granite 2" chance="10" />
+		<ore itemStack="gregtech:ore_aqua_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_aer_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_entropy_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_ignis_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_terra_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_ordo_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_topaz_0" chance="15" />
+		<ore itemStack="minecraft:diamond_block" chance="2" />
+		<ore itemStack="minecraft:emerald_block" chance="2" />
+		<ore itemStack="gregtech:ore_blue_topaz_0" chance="15" />
+		<ore itemStack="gregtech:ore_ruby_0" chance="45" />
+		<ore itemStack="gregtech:ore_cinnabar_0" chance="15" />
+		<ore itemStack="thaumcraft:ore_amber" chance="10" />
+		<ore itemStack="actuallyadditions:block_misc 3" chance="15" />
+		<ore itemStack="gregtech:ore_certus_quartz_0" chance="25" />
+		<ore itemStack="gregtech:ore_quartzite_0 3" chance="10" />
+		<ore itemStack="gregtech:ore_nether_quartz_0" chance="15" />
+		<ore itemStack="contenttweaker:sub_block_holder_3 13" chance="15" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 9" chance="15" />
+		</asteroid>		
+	<asteroid name="Strange Glowing Asteroid" distance="20" mass="1500" massVariability="0.5" minLevel="0" probability="10" richness="0.5" richnessVariability="0.5">
+		<ore itemStack="contenttweaker:sub_block_holder_3 13" chance="15" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 9" chance="15" />
+		<ore itemStack="astralsorcery:blockcustomsandore" chance="20" />
+		<ore itemStack="gregtech:ore_oilsands_0" chance="20" />
+		<ore itemStack="gregtech:ore_sulfur_0" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_5 10" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 12" chance="20" />
+		<ore itemStack="gregtech:ore_barite_0" chance="20" />
+		<ore itemStack="gregtech:ore_amethyst_0 7" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_3 13" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_3" chance="20" />
+		<ore itemStack="gregtech:ore_nether_quartz_0" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 1" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 9" chance="20" />
+		<ore itemStack="actuallyadditions:block_misc 6" chance="20" />
+	</asteroid>
+	<asteroid name="Small Planetoid" distance="25" mass="5000" massVariability="0.2" minLevel="0" probability="20" richness="0.65" richnessVariability="0.25">
+		<ore itemStack="gregtech:ore_malachite_0" chance="25" />
+		<ore itemStack="gregtech:ore_chalcopyrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_copper_0" chance="25" />
+		<ore itemStack="gregtech:ore_tetrahedrite_0" chance="25" />
+		<ore itemStack="gregtech:compressed_10 6" chance="1" />
+		<ore itemStack="gregtech:mineral" chance="10" />
+		<ore itemStack="gregtech:granite 1" chance="10" />
+		<ore itemStack="gregtech:granite 2" chance="10" />
+		<ore itemStack="gregtech:meta_item_1 2003" chance="5" />
+		<ore itemStack="gregtech:ore_pyrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_brown_limonite_0" chance="25" />		
+		<ore itemStack="gregtech:mineral" chance="10" />
+		<ore itemStack="gregtech:ore_malachite_0" chance="25" />
+		<ore itemStack="gregtech:ore_chalcopyrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_copper_0" chance="25" />
+		<ore itemStack="gregtech:ore_tetrahedrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_malachite_0" chance="25" />
+		<ore itemStack="gregtech:ore_chalcopyrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_copper_0" chance="25" />
+		<ore itemStack="gregtech:ore_tetrahedrite_0" chance="25" />
+		<ore itemStack="gregtech:ore_iron_0" chance="25" />
+		<ore itemStack="gregtech:ore_banded_iron_0" chance="25" /> 
+		<ore itemStack="gregtech:ore_yellow_limonite_0" chance="25" />
+		<ore itemStack="gregtech:ore_magnetite_0" chance="25" />
+		<ore itemStack="gregtech:ore_redstone_0 3" chance="25" />	
+		<ore itemStack="gregtech:ore_magnetite_0" chance="25" />
+		<ore itemStack="gregtech:ore_vanadium_magnetite_0" chance="25" />
+		<ore itemStack="contenttweaker:sub_block_holder_3 12" chance="25" />
+		<ore itemStack="gregtech:ore_gold_0" chance="25" />
+		<ore itemStack="gregtech:ore_silver_0" chance="40" />
+		<ore itemStack="gregtech:ore_galena_0" chance="35" />
+		<ore itemStack="gregtech:ore_garnet_yellow_0" chance="20" />			
+		<ore itemStack="gregtech:ore_topaz_0" chance="20" />
+		<ore itemStack="gregtech:ore_lapis_0" chance="15" />	
+		<ore itemStack="gregtech:ore_aqua_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_aer_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_entropy_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_ignis_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_terra_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_ordo_infused_0" chance="25" />
+		<ore itemStack="gregtech:ore_topaz_0" chance="15" />
+		<ore itemStack="minecraft:diamond_block" chance="2" />
+		<ore itemStack="minecraft:emerald_block" chance="2" />
+		<ore itemStack="gregtech:ore_blue_topaz_0" chance="15" />
+		<ore itemStack="gregtech:ore_ruby_0" chance="45" />
+		<ore itemStack="gregtech:ore_cinnabar_0" chance="15" />
+		<ore itemStack="thaumcraft:ore_amber" chance="10" />
+		<ore itemStack="actuallyadditions:block_misc 3" chance="15" />
+		<ore itemStack="gregtech:ore_certus_quartz_0" chance="25" />
+		<ore itemStack="gregtech:ore_quartzite_0 3" chance="10" />
+		<ore itemStack="gregtech:ore_nether_quartz_0" chance="15" />
+		<ore itemStack="contenttweaker:sub_block_holder_3 13" chance="15" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 9" chance="15" />
+		<ore itemStack="contenttweaker:sub_block_holder_3 13" chance="15" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 9" chance="15" />
+		<ore itemStack="astralsorcery:blockcustomsandore" chance="20" />
+		<ore itemStack="gregtech:ore_oilsands_0" chance="20" />
+		<ore itemStack="gregtech:ore_sulfur_0" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_5 10" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 12" chance="20" />
+		<ore itemStack="gregtech:ore_barite_0" chance="20" />
+		<ore itemStack="gregtech:ore_amethyst_0 7" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_3 13" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_3" chance="20" />
+		<ore itemStack="gregtech:ore_nether_quartz_0" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 1" chance="20" />
+		<ore itemStack="contenttweaker:sub_block_holder_2 9" chance="20" />
+		<ore itemStack="actuallyadditions:block_misc 6" chance="20" />
+		<ore itemStack="gregtech:ore_bauxite_0" chance="15" />
+		<ore itemStack="gregtech:ore_sphalerite_0" chance="10" />
+		<ore itemStack="gregtech:ore_stibnite_0" chance="10" />
+		<ore itemStack="gregtech:ore_chromite_0" chance="4" />
+	</asteroid>			
+</Asteroids>

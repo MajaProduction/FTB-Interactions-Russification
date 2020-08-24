@@ -1,0 +1,36 @@
+{
+	x: -4.0d,
+	y: 4.0d,
+	description: "{interactions.ed136c16.702da854.description}",
+	dependencies: [
+		"9c15eaeb"
+	],
+	tasks: [{
+		uid: "d07206b7",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "avaritia:infinity_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "94f9ef7d",
+		type: "item",
+		item: "projecte:item.pe_matter 1 1",
+		count: 2
+	},
+	{
+		uid: "b672e1b7",
+		type: "xp_levels",
+		xp_levels: 100
+	},
+	{
+		uid: "7d6f762a",
+		type: "item",
+		item: "harvestcraft:chilidogitem"
+	}]
+}

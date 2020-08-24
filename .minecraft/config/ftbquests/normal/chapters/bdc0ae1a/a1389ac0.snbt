@@ -1,0 +1,36 @@
+{
+	x: 4.5d,
+	y: 3.0d,
+	description: "{interactions.bdc0ae1a.a1389ac0.description}",
+	dependencies: [
+		"1b10cc2d"
+	],
+	tasks: [{
+		uid: "cd8cc18d",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "dea518b1",
+		type: "item",
+		item: {
+			id: "modularmachinery:itemblueprint",
+			tag: {
+				dynamicmachine: "modularmachinery:gem_refiner"
+			}
+		}
+	},
+	{
+		uid: "10660cd7",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "mekanism:machineblock2",
+			Damage: 13s
+		}
+	}]
+}

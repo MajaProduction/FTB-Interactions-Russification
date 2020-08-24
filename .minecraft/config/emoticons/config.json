@@ -1,0 +1,15 @@
+{
+    "general": {
+        "disable_sound_events": false
+    },
+    "animations": {
+        "disable": false,
+        "simple": false
+    },
+    "player_preview": {
+        "mode": 0,
+        "scale": 20,
+        "x": 20,
+        "y": 50
+    }
+}

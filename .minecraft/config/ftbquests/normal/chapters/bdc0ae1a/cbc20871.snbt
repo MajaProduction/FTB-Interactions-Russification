@@ -1,0 +1,20 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	dependencies: [
+		"1d2f9478",
+		"1de75dbc"
+	],
+	tasks: [{
+		uid: "14a20b18",
+		type: "item",
+		items: [{
+			item: "botania:pylon 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "10288d5a",
+		type: "item",
+		item: "botania:pylon 1 1"
+	}]
+}

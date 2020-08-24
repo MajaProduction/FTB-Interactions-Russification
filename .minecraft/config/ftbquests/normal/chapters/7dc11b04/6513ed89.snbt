@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: 5.0d,
+	shape: "diamond",
+	dependencies: [
+		"fcc607bd"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "51938941",
+		type: "item",
+		items: [{
+			item: "bloodmagic:decorative_brick 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "085d58b5",
+		type: "item",
+		item: "bhc:blue_heart_canister",
+		count: 4
+	}]
+}

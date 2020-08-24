@@ -1,0 +1,33 @@
+{
+	title: "{interactions.partygear.antimatter.title}",
+	x: -12.5d,
+	y: 2.0d,
+	description: "{interactions.partygear.antimatter.description}",
+	text: [
+		"{interactions.partygear.antimatter.text.0}",
+		"{interactions.partygear.antimatter.text.1}",
+		"{interactions.partygear.antimatter.text.2}"
+	],
+	tasks: [{
+		uid: "1071f17e",
+		type: "fluid",
+		fluid: "blockfluidantimatter"
+	}],
+	rewards: [{
+		uid: "cb5fd651",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "rftools:shape_card",
+			Damage: 8s
+		}
+	},
+	{
+		uid: "8908b538",
+		type: "item",
+		team_reward: true,
+		item: "randomthings:spectrecoil_number"
+	}]
+}

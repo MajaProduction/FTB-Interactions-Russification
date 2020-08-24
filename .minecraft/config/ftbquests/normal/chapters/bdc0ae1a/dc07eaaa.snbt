@@ -1,0 +1,17 @@
+{
+	x: 1.5d,
+	y: 1.5d,
+	tasks: [{
+		uid: "ea1da7bb",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:rockwool 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "688c0b43",
+		type: "item",
+		item: "thermalfoundation:rockwool 1 7",
+		count: 8
+	}]
+}
