@@ -1,0 +1,85 @@
+contenttweaker.part.enriched_egg=%s Обогащенное яйцо
+contenttweaker.part.ore_cluster=%s Скопление руды
+contenttweaker.part.ore_shard=%s Концентрированный кровавый осколок
+contenttweaker.part.ore_clump=%s Глыба руды
+contenttweaker.part.ore_crystal=%s Crystal
+
+tile.contenttweaker.portalBlockt.name=Портал в обычный мир
+tile.contenttweaker.portalBlockUnt.name=Портал в нижний мир
+
+tile.contenttweaker.destabilized_well.name=Дестабилизированный колодец
+tile.contenttweaker.energized_well.name=Заряженный колодец
+
+item.contenttweaker.overworldessencel.name=Эссенция мира (День)
+item.contenttweaker.overworldessencer.name=Эссенция мира (Ночь)
+item.contenttweaker.skystonelense.name=Линзы из небесного камня
+item.contenttweaker.infinityegg.name=Яйцо бесконечности
+item.contenttweaker.tekmenu.name=Tek's Abomination by TeknoAXE
+item.contenttweaker.smallgearextrudershape.name=Форма экструдера (малая шестерня)
+
+fluid.molten_sand=Molten Sand
+fluid.diluted_sulfuric_acid=Diluted Sulfuric Acid
+fluid.hydrogen_sulfide=Hydrogen Sulfide
+fluid.polyethylene=Polyethylene
+fluid.polytetrafluoroethylene=Polytetrafluoroethylene (Teflon)
+fluid.sulfuric_diesel=Sulfuric Diesel
+fluid.sulfuric_gasoline=Sulfuric Gasoline
+fluid.sulfuric_kerosene=Sulfuric Kerosene
+fluid.sulfuric_lpg=Sulfuric LPG
+fluid.sulfuric_naphtha=Sulfuric Naphtha
+fluid.tolulene=Tolulene
+
+entity.apatitechicken.name=Апатитовая курица
+entity.bentonitechicken.name=Бентонитовая курица
+entity.glauconitechicken.name=Глаутонитовая курица
+entity.graphitechicken.name=Графитовая курица
+entity.grossularchicken.name=Гросулярная курица
+entity.magnesiumchicken.name=Магниевая курица
+entity.manganesechicken.name=Марганцевая курица
+entity.monazitechicken.name=Монацитовая  курица
+entity.phosphorchicken.name=Фосфорная курица
+entity.soapstonechicken.name=Мульная курица
+entity.spessartinechicken.name=Spessartine Chicken
+entity.stibnitechicken.name=Стибнитовая курица
+entity.tantalumchicken.name=Танталовая курица
+entity.vanadiumchicken.name=Ванадиевая курица
+entity.niobiumchicken.name=Ниобиевая курица
+entity.infinitychicken.name=Курица бесконечности
+entity.ftbchicken.name=FTB курица
+
+entity.canolachicken.name=Canola Chicken
+entity.astralchicken.name=Астральная курица
+entity.resonatingchicken.name=Резонирующая курица
+entity.fluorinechicken.name=Фторная курица
+entity.fluixchicken.name=Fluix Chicken
+entity.gassychicken.name=Газовая курица
+entity.radonchicken.name=Радоновая куриа
+entity.vinteumchicken.name=Винетиевая курицца
+entity.plasticchicken.name=Пластиковая куриа
+entity.learningchicken.name=Учёная курица
+entity.manachicken.name=Курица маны
+entity.menrilchicken.name=Menril Chicken
+entity.smogchicken.name=Туманная курица
+entity.rubberchicken.name=Резинованная курица
+entity.primalchicken.name=Допотопная курица
+entity.concretechicken.name=Бетонная курица
+entity.spicechicken.name=Острая курица
+entity.spacechicken.name=Галактическая курица
+entity.bloodchicken.name=Кровавая курица
+entity.porcelainchicken.name=Фарфоровая курица 
+entity.polywhatsitchicken.name=Polywhatsit Chicken
+entity.latticitechicken.name=Latticite Chicken
+entity.vitriolicchicken.name=Ядовитая курица
+entity.rubberychicken.name=Резиновая курица
+
+tile.contenttweaker.entropy_infused_ore.name=Entropy-заражённая руда
+tile.contenttweaker.ordo_infused_ore.name=Ordo-заражённая руда
+tile.contenttweaker.ignis_infused_ore.name=Ignis-заражённая руда
+tile.contenttweaker.aqua_infused_ore.name=Aqua-заражённая руда
+tile.contenttweaker.aer_infused_ore.name=Aer-заражённая руда
+tile.contenttweaker.terra_infused_ore.name=Terra-заражённая руда
+tile.contenttweaker.saltpeter_ore.name=РУда селитры
+tile.contenttweaker.salt_ore.name=Руда соли
+tile.contenttweaker.biotite_block.name=Блок биотита
+tile.contenttweaker.lepidolite_ore.name=Лепидолитовая руда
+tile.contenttweaker.rock_salt_ore.name=Руда каменной соли
