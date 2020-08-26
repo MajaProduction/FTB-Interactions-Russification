@@ -1,6 +1,0 @@
-[INFO]  Located rule file: Leaves.json
-[INFO]  Located rule file: Ores.json
-[INFO]  Rule file loaded: Leaves.json
-[INFO]  Rule file loaded: Ores.json
-[ERROR] [PARSE] Unable to find registered item <nex:ore_quartz:1> in file: Ores.json
-[ERROR] [PARSE] Unable to find registered item <nex:ore_quartz:3> in file: Ores.json
