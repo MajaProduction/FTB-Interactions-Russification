@@ -24,5 +24,11 @@
 		type: "item",
 		item: "gregtech:cable 1 47",
 		count: 16
+	},
+	{
+		uid: "abdc8d1c",
+		type: "item",
+		item: "gregtech:meta_item_1 1 32671",
+		count: 4
 	}]
 }

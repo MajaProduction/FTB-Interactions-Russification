@@ -1,0 +1,30 @@
+{
+    "machine": "gem_refiner",
+    "registryName": "gem_refiner_carbon_to_coal",
+    "recipeTime": 120,
+    "requirements": [ 
+		{
+			"type": "mana",
+			"io-type": "input",
+			"mana": 1000
+		},
+		{
+			"type": "mekheat",
+			"io-type": "input",
+			"temperatureRequiredMin": 750,
+			"temperature": 250
+		},			
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "gregtech:meta_item_1:2012",
+            "amount": 1
+		},
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "minecraft:coal"
+		}
+
+	]
+}

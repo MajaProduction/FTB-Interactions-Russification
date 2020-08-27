@@ -18,5 +18,13 @@
 		type: "item",
 		item: "bhc:blue_heart_canister",
 		count: 4
+	},
+	{
+		uid: "c5155276",
+		type: "item",
+		item: {
+			id: "draconicevolution:dislocator_advanced",
+			tag: {}
+		}
 	}]
 }

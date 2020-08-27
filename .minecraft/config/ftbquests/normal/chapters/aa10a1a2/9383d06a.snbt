@@ -1,6 +1,6 @@
 {
 	title: "{interactions.aa10a1a2.9383d06a.title}",
-	x: -1.0d,
+	x: -0.5d,
 	y: -3.5d,
 	dependencies: [
 		"185b535b",

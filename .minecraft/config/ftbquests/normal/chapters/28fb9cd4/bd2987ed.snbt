@@ -1,0 +1,98 @@
+{
+	title: "{interactiosns.luckystar.dynanism.title}",
+	x: 1.0d,
+	y: 1.5d,
+	description: "{interactiosns.luckystar.dynanism.description}",
+	text: [
+		"{interactiosns.luckystar.dynanism.text.0}",
+		"{interactiosns.luckystar.dynanism.text.1}"
+	],
+	tasks: [{
+		uid: "e1943d6e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemperkgem",
+			tag: {
+				astralsorcery: {}
+			},
+			Damage: 2s
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemperkgem",
+			tag: {
+				astralsorcery: {
+					modifiers: [{
+						mode: 1,
+						baseValue: 0.060241878f,
+						mId: 348L,
+						idMost: -1019539001544521833L,
+						type: "astralsorcery.critchance",
+						idLeast: -5332150580340328006L
+					},
+					{
+						mode: 1,
+						baseValue: 0.06599818f,
+						mId: 349L,
+						idMost: -9162445525160738423L,
+						type: "astralsorcery.meleeattackdamage",
+						idLeast: -8931079670443529756L
+					},
+					{
+						mode: 1,
+						baseValue: 0.05211446f,
+						mId: 350L,
+						idMost: 4844937792329698516L,
+						type: "astralsorcery.maxhealth",
+						idLeast: -8021846293519070150L
+					}]
+				}
+			},
+			Damage: 1s
+		},
+		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "astralsorcery:itemperkgem",
+			tag: {
+				astralsorcery: {
+					modifiers: [{
+						mode: 1,
+						baseValue: 0.056175433f,
+						mId: 342L,
+						idMost: -6892026620051634619L,
+						type: "astralsorcery.allres",
+						idLeast: -5893427648942038545L
+					},
+					{
+						mode: 1,
+						baseValue: 0.061338365f,
+						mId: 343L,
+						idMost: -1252713949678778098L,
+						type: "astralsorcery.movespeed",
+						idLeast: -7664483392769103498L
+					}]
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6dff90ad",
+		type: "choice",
+		title: "Choice Gem Cluster",
+		icon: "astralsorcery:blockgemcrystals 1 3",
+		table: 3
+	},
+	{
+		uid: "42d4ec71",
+		type: "xp_levels",
+		xp_levels: 3
+	}]
+}

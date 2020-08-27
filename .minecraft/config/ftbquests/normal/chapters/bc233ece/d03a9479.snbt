@@ -17,8 +17,7 @@
 		type: "item",
 		items: [{
 			item: "gregtech:meta_item_1 1 32724"
-		}],
-		ignore_damage: true
+		}]
 	}],
 	rewards: [{
 		uid: "3f68d9af",

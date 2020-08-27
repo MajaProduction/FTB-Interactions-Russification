@@ -13,6 +13,7 @@
 		"e50a603a",
 		"da0cc52f"
 	],
+	optional: true,
 	tasks: [{
 		uid: "ac51fd19",
 		type: "item",

@@ -1,7 +1,7 @@
 {
 	title: "{interactions.99314095.95dee4b6.title}",
-	x: -10.0d,
-	y: 2.0d,
+	x: -8.0d,
+	y: 1.0d,
 	shape: "rsquare",
 	description: "{interactions.99314095.95dee4b6.description}",
 	text: [

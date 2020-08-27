@@ -1,0 +1,31 @@
+{
+	title: "{interactions.metallurgymaster.vanadium.title}",
+	x: -0.5d,
+	y: -3.5d,
+	shape: "square",
+	description: "{interactions.metallurgymaster.vanadium.description}",
+	text: [
+		"{interactions.metallurgymaster.vanadium.text.0}"
+	],
+	dependencies: [
+		"76fe0e76"
+	],
+	tasks: [{
+		uid: "6eaf7703",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10195"
+		}]
+	}],
+	rewards: [{
+		uid: "065892a4",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10195",
+		count: 32
+	},
+	{
+		uid: "ccf527fb",
+		type: "xp_levels",
+		xp_levels: 10
+	}]
+}

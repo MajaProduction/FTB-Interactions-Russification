@@ -16,5 +16,18 @@
 		type: "item",
 		item: "bloodmagic:component 1 29",
 		count: 32
+	},
+	{
+		uid: "55771946",
+		type: "item",
+		item: {
+			id: "apotheosis:hellshelf",
+			tag: {
+				ench: [{
+					lvl: 10s,
+					id: 56s
+				}]
+			}
+		}
 	}]
 }

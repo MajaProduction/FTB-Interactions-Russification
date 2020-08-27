@@ -1,6 +1,6 @@
 {
 	title: "{interactions.fd71bc82.6b69f34f.title}",
-	x: -2.0d,
+	x: -4.5d,
 	y: 0.5d,
 	text: [
 		"{interactions.fd71bc82.6b69f34f.text.0}"
@@ -14,6 +14,20 @@
 		},
 		{
 			item: "gregtech:ore_scheelite_0"
+		},
+		{
+			item: "minecraft:end_stone"
 		}]
+	}],
+	rewards: [{
+		uid: "67b9d2b1",
+		type: "item",
+		item: "rftools:infused_enderpearl"
+	},
+	{
+		uid: "d8bd5a7d",
+		type: "item",
+		item: "deepmoblearning:pristine_matter_dragon",
+		count: 4
 	}]
 }

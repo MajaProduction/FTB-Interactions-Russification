@@ -96,5 +96,10 @@
 		uid: "eca768be",
 		type: "item",
 		item: "fluxnetworks:fluxpoint"
+	},
+	{
+		uid: "1477e85f",
+		type: "item",
+		item: "cyclicmagic:cable_wireless"
 	}]
 }

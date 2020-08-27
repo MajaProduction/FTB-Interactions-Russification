@@ -1,6 +1,6 @@
 {
-	x: 1.5d,
-	y: 0.5d,
+	x: -4.5d,
+	y: 3.5d,
 	shape: "diamond",
 	dependencies: [
 		"a1c5f008",
@@ -23,5 +23,11 @@
 		type: "item",
 		item: "bloodmagic:item_demon_crystal",
 		count: 64
+	},
+	{
+		uid: "c52e7bf0",
+		type: "item",
+		item: "gregtech:meta_item_1 1 11074",
+		count: 8
 	}]
 }

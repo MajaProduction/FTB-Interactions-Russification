@@ -276,7 +276,7 @@ mods.astralsorcery.Altar.addAttunementAltarRecipe("interactions:aajumpboostring"
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Speed Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced>, 
 	[[null,<ore:elvenDragonstone>,null],
-	[<ore:foilSterlingSilver>,null,<ore:foilSterlingSilver>],
+	[<ore:foilSterlingSilver>,<actuallyadditions:item_potion_ring>,<ore:foilSterlingSilver>],
 	[null,<ore:elvenDragonstone>,null]]
 	);
 	
@@ -284,7 +284,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Speed Ring", "", 15, [<
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced:1>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Haste Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:1>, 
 	[[null,<ore:elvenDragonstone>,null],
-	[<ore:foilSterlingSilver>,null,<ore:foilSterlingSilver>],
+	[<ore:foilSterlingSilver>,<actuallyadditions:item_potion_ring:1>,<ore:foilSterlingSilver>],
 	[null,<ore:elvenDragonstone>,null]]
 	);
 	
@@ -292,7 +292,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Haste Ring", "", 15, [<
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced:2>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Strength Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:2>, 
 	[[null,<ore:elvenDragonstone>,null],
-	[<ore:foilStainlessSteel>,null,<ore:foilStainlessSteel>],
+	[<ore:foilStainlessSteel>,<actuallyadditions:item_potion_ring:2>,<ore:foilStainlessSteel>],
 	[null,<ore:elvenDragonstone>,null]]
 	);
 	
@@ -300,15 +300,15 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Strength Ring", "", 15,
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced:3>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Jump boost Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:3>, 
 	[[null,<ore:elvenDragonstone>,null],
-	[<ore:foilSterlingSilver>,null,<ore:foilSterlingSilver>],
+	[<ore:foilSterlingSilver>,<actuallyadditions:item_potion_ring:3>,<ore:foilSterlingSilver>],
 	[null,<ore:elvenDragonstone>,null]]
 	);
 	
 	#Regeneration
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced:4>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Invis Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:8>, 
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Regen Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:4>, 
 	[[null,<ore:elvenDragonstone>,null],
-	[<ore:foilStainlessSteel>,null,<ore:foilStainlessSteel>],
+	[<ore:foilStainlessSteel>,<actuallyadditions:item_potion_ring:4>,<ore:foilStainlessSteel>],
 	[null,<ore:elvenDragonstone>,null]]
 	);
 	
@@ -316,7 +316,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Invis Ring", "", 15, [<
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced:5>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Resistance Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:5>, 
 	[[null,<ore:elvenDragonstone>,null],
-	[<ore:foilStainlessSteel>,null,<ore:foilStainlessSteel>],
+	[<ore:foilStainlessSteel>,<actuallyadditions:item_potion_ring:5>,<ore:foilStainlessSteel>],
 	[null,<ore:elvenDragonstone>,null]]
 	);
 	
@@ -324,7 +324,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Resistance Ring", "", 1
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced:6>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Fire resistance Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:6>, 
 	[[null,<ore:elvenDragonstone>,null],
-	[<ore:foilSterlingSilver>,null,<ore:foilSterlingSilver>],
+	[<ore:foilSterlingSilver>,<actuallyadditions:item_potion_ring:6>,<ore:foilSterlingSilver>],
 	[null,<ore:elvenDragonstone>,null]]
 	);
 	
@@ -332,7 +332,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Fire resistance Ring", 
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced:7>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA water breathing Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:7>, 
 	[[null,<ore:elvenDragonstone>,null],
-	[<ore:foilSterlingSilver>,null,<ore:foilSterlingSilver>],
+	[<ore:foilSterlingSilver>,<actuallyadditions:item_potion_ring:7>,<ore:foilSterlingSilver>],
 	[null,<ore:elvenDragonstone>,null]]
 	);
 	
@@ -340,7 +340,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA water breathing Ring", 
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced:8>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Invis Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:8>, 
 	[[null,<ore:elvenDragonstone>,null],
-	[<ore:foilSterlingSilver>,null,<ore:foilSterlingSilver>],
+	[<ore:foilSterlingSilver>,<actuallyadditions:item_potion_ring:8>,<ore:foilSterlingSilver>],
 	[null,<ore:elvenDragonstone>,null]]
 	);
 	
@@ -348,7 +348,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Invis Ring", "", 15, [<
 	recipes.remove(<actuallyadditions:item_potion_ring_advanced:9>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("AA Night vision Ring", "", 15, [<aspect:ordo> *2], <actuallyadditions:item_potion_ring_advanced:9>, 
 	[[null,<ore:manaPearl>,null],
-	[<ore:foilSterlingSilver>,null,<ore:foilSterlingSilver>],
+	[<ore:foilSterlingSilver>,<actuallyadditions:item_potion_ring:9>,<ore:foilSterlingSilver>],
 	[null,<ore:manaPearl>,null]]
 	);
 	

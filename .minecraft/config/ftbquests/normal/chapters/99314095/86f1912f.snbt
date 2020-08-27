@@ -98,5 +98,16 @@
 		uid: "f7c7d9c9",
 		type: "item",
 		item: "harvestcraft:chocolateicecreamitem"
+	},
+	{
+		uid: "b8de798a",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			tag: {
+				Configuration: 0
+			},
+			Damage: 32766s
+		}
 	}]
 }

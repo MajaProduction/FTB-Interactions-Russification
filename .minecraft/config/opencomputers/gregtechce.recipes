@@ -116,14 +116,6 @@ chip1 {
         ["oc:materialTransistor", {oreDict: "circuitBasic", gtid: "circuit.basic"}, "oc:materialTransistor"]
         ["", "oc:materialTransistor", ""]
       ]
-    },
-    {
-      type: gtce_assembler
-      input: [{oreDict: "circuitBasic", gtid: "circuit.basic"}, "oc:materialTransistor"]
-      count: [1, 4]
-      eu: 25
-      duration: 480
-      output: 4
     }
   ]
 }
@@ -137,26 +129,10 @@ chip2 {
         ["oc:materialTransistor", {oreDict: "circuitBasic", gtid: "circuit.basic"}, "oc:materialTransistor"]
         ["oc:materialTransistor", "oc:materialTransistor", "oc:materialTransistor"]
       ]
-    },
-    {
-      type: gtce_assembler
-      input: [{oreDict: "circuitBasic", gtid: "circuit.basic_electronic"}, "oc:materialTransistor"]
-      count: [1, 8]
-      eu: 25
-      duration: 640
-      output: 4
     }
   ]
 }
 
-chip3 {
-  type: gtce_assembler
-  input: [{oreDict: "circuitBasic", gtid: "circuit.advanced_parts"}, "oc:materialTransistor"]
-  count: [1, 16]
-  eu: 25
-  duration: 800
-  output: 4
-}
 
 cu {
   type: gtce_multiple

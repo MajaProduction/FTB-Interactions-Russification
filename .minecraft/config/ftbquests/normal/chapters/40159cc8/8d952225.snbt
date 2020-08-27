@@ -1,8 +1,9 @@
 {
 	title: "{interactions.40159cc8.8d952225.title}",
 	icon: "advancedrocketry:spacelaser",
-	x: 6.5d,
+	x: 7.0d,
 	y: -15.0d,
+	shape: "diamond",
 	description: "{interactions.40159cc8.8d952225.description}",
 	text: [
 		"{interactions.40159cc8.8d952225.text.0}"
@@ -10,6 +11,7 @@
 	dependencies: [
 		"c3e76f1e"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "dbee60ad",
 		type: "item",
@@ -62,8 +64,8 @@
 		item: "randomthings:spectrecoil_ender"
 	},
 	{
-		uid: "feb6d66d",
+		uid: "d1a6dcfd",
 		type: "item",
-		item: "appliedenergistics2:chest"
+		item: "enderutilities:asu"
 	}]
 }

@@ -1,0 +1,14 @@
+{
+	title: "GemCluster",
+	icon: "astralsorcery:blockgemcrystals 1 2",
+	loot_size: 1,
+	rewards: [{
+		item: "astralsorcery:blockgemcrystals 1 2"
+	},
+	{
+		item: "astralsorcery:blockgemcrystals 1 3"
+	},
+	{
+		item: "astralsorcery:blockgemcrystals 1 4"
+	}]
+}

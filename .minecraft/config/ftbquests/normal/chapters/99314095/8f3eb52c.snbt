@@ -1,0 +1,21 @@
+{
+	x: -10.0d,
+	y: 10.0d,
+	dependencies: [
+		"00658fe7"
+	],
+	tasks: [{
+		uid: "fc288a70",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 1 7"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "6e23a668",
+		type: "item",
+		item: "gregtech:wire_coil 1 7",
+		count: 8
+	}]
+}

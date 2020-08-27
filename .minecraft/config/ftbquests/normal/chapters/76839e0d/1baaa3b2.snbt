@@ -1,0 +1,38 @@
+{
+	title: "{interactions.metallurgymaster.ytt.title}",
+	x: 0.5d,
+	y: -3.5d,
+	shape: "square",
+	description: "{interactions.metallurgymaster.ytt.description}",
+	text: [
+		"{interactions.metallurgymaster.ytt.text.0}"
+	],
+	dependencies: [
+		"76fe0e76"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "8f8a208a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 10200"
+		}]
+	}],
+	rewards: [{
+		uid: "a3493679",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10200",
+		count: 32
+	},
+	{
+		uid: "06b691fb",
+		type: "item",
+		item: "thermaldynamics:duct_0 1 5",
+		count: 32
+	},
+	{
+		uid: "42a6d3bb",
+		type: "xp_levels",
+		xp_levels: 10
+	}]
+}

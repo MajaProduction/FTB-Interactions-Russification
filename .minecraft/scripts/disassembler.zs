@@ -57,12 +57,12 @@ var loc = "disassembler" as string;
 val disassembler_recipe_map = FactoryRecipeMap.start(loc)
 	.minInputs(1)
 	.maxInputs(1)
-	.minFluidInputs(0)
-	.maxFluidInputs(1)
+	//.minFluidInputs(0)
+	//.maxFluidInputs(1)
 	.minOutputs(1)
 	.maxOutputs(16)
-	.minFluidOutputs(0)
-	.maxFluidOutputs(1)
+	//.minFluidOutputs(0)
+	//.maxFluidOutputs(1)
 	.build();
 
 val disassembler = Builder.start(loc, id)
@@ -85,18 +85,18 @@ val disassembler = Builder.start(loc, id)
 			.where(' ', IBlockMatcher.ANY)
 			.whereOr('C', <metastate:gregtech:metal_casing:3> as IBlockMatcher,
 				IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY,
-					MultiblockAbility.IMPORT_FLUIDS,
+					//MultiblockAbility.IMPORT_FLUIDS,
 					MultiblockAbility.IMPORT_ITEMS,
-					MultiblockAbility.EXPORT_FLUIDS,
+					//MultiblockAbility.EXPORT_FLUIDS,
 					MultiblockAbility.EXPORT_ITEMS))
-			.setAmountAtMost('p', 4)
+			.setAmountAtMost('p', 1)
 			.where('p', IBlockMatcher.abilityPartPredicate(MultiblockAbility.INPUT_ENERGY))
-			.setAmountAtMost('f', 1)
-			.where('f', IBlockMatcher.abilityPartPredicate(MultiblockAbility.IMPORT_FLUIDS))
+			//.setAmountAtMost('f', 1)
+			//.where('f', IBlockMatcher.abilityPartPredicate(MultiblockAbility.IMPORT_FLUIDS))
 			.setAmountAtMost('i', 1)
 			.where('i', IBlockMatcher.abilityPartPredicate(MultiblockAbility.IMPORT_ITEMS))
-			.setAmountAtMost('F', 1)
-			.where('F', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_FLUIDS))
+			//.setAmountAtMost('F', 1)
+			//.where('F', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_FLUIDS))
 			.setAmountAtMost('I', 1)
 			.where('I', IBlockMatcher.abilityPartPredicate(MultiblockAbility.EXPORT_ITEMS))
 			.build())
@@ -104,24 +104,24 @@ val disassembler = Builder.start(loc, id)
 	.addDesign(
 		FactoryMultiblockShapeInfo.start()
 			.aisle(
-				"CpC",
-				"fCF",
-				"iSI")
-			.aisle(
+				"iCC",
 				"CCC",
+				"CCC")
+			.aisle(
+				"SCp",
 				"C C",
 				"CCC")
 			.aisle(
-				"CCC",
+				"ICC",
 				"CCC",
 				"CCC")
 			.where('S', IBlockInfo.controller(loc))
 			.where(' ', IBlockInfo.EMPTY)
 			.where('C', <metastate:gregtech:metal_casing:3>)
 			.where('p', MetaTileEntities.ENERGY_INPUT_HATCH[3], IFacing.north())
-			.where('f', MetaTileEntities.FLUID_IMPORT_HATCH[1], IFacing.west())
+			//.where('f', MetaTileEntities.FLUID_IMPORT_HATCH[1], IFacing.west())
 			.where('i', MetaTileEntities.ITEM_IMPORT_BUS[1], IFacing.west())
-			.where('F', MetaTileEntities.FLUID_EXPORT_HATCH[1], IFacing.east())
+			//.where('F', MetaTileEntities.FLUID_EXPORT_HATCH[1], IFacing.east())
 			.where('I', MetaTileEntities.ITEM_EXPORT_BUS[3], IFacing.east())
 			.build())
 	// initialize the recipe manager for the disassembler, populated later
@@ -195,6 +195,7 @@ val tiered_items as IItemStack[][string]= {
 	"rubber_pump": [<gregtech:meta_item_1:1325>,<gregtech:meta_item_1:1152>,<gregtech:meta_item_1:1152>,<gregtech:meta_item_1:1152>,<gregtech:meta_item_1:1152>,<gregtech:meta_item_1:1391>,<gregtech:meta_item_1:1391>,<gregtech:meta_item_1:1391>,null],
 	"rubber_conveyor": [<gregtech:meta_item_1:1152>,<gregtech:meta_item_1:1152>,<gregtech:meta_item_1:1152>,<gregtech:meta_item_1:1152>,<gregtech:meta_item_1:1152>,<gregtech:meta_item_1:1398>,<gregtech:meta_item_1:1398>,<gregtech:meta_item_1:1398>,null],
 	"wire_hull": [<gregtech:cable:71>,<gregtech:cable:18>,<gregtech:cable:26>,<gregtech:cable:1>,<gregtech:cable:74>,<gregtech:cable:195>,<gregtech:cable:307>,<gregtech:cable:2308>,<gregtech:cable:354>],
+	"wire_machine": [<gregtech:cable:71>,<gregtech:cable:18>,<gregtech:cable:26>,<gregtech:cable:1>,<gregtech:cable:74>,<gregtech:cable:135>,<gregtech:cable:307>,<gregtech:cable:2308>,<gregtech:cable:354>],
 	"wire_components": [<gregtech:cable:71>,<gregtech:cable:18>,<gregtech:cable:26>,<gregtech:cable:1>,<gregtech:cable:74>,<gregtech:cable:200>,<gregtech:cable:195>,<gregtech:cable:135>,<gregtech:cable:354>],
 	"wire_coil": [<gregtech:cable:18>,<gregtech:cable:109>,<gregtech:cable:127>,<gregtech:cable:133>,<gregtech:cable:235>,<gregtech:cable:302>,<gregtech:cable:307>,<gregtech:cable:308>,null],
 	"wire_osmium": [<gregtech:cable:47>,<gregtech:cable:1047>,<gregtech:cable:2047>,<gregtech:cable:3047>,<gregtech:cable:4047>,<gregtech:cable:2047>,<gregtech:cable:2047>,<gregtech:cable:2047>,null],
@@ -237,7 +238,7 @@ val tiered_items as IItemStack[][string]= {
 	"polarizer": [<gregtech:machine:420>,<gregtech:machine:421>,<gregtech:machine:422>,<gregtech:machine:423>,<gregtech:machine:2152>,<gregtech:machine:2153>,<gregtech:machine:2154>,<gregtech:machine:2155>,null],
 	"sifter": [<gregtech:machine:450>,<gregtech:machine:451>,<gregtech:machine:452>,<gregtech:machine:453>,<gregtech:machine:2160>,<gregtech:machine:2161>,<gregtech:machine:2162>,<gregtech:machine:2163>,null],
 	"wiremill": [<gregtech:machine:470>,<gregtech:machine:471>,<gregtech:machine:472>,<gregtech:machine:473>,<gregtech:machine:2168>,<gregtech:machine:2169>,<gregtech:machine:2170>,<gregtech:machine:2171>,null],
-	"diesel_generator": [<gregtech:machine:480>,<gregtech:machine:481>,<gregtech:machine:482>,<gregtech:machine:517>,null,null,null,null,null],
+	"diesel_generator": [<gregtech:machine:480>,<gregtech:machine:481>,<gregtech:machine:482>,null,null,null,null,null,null],
 	"steam_turbine": [<gregtech:machine:485>,<gregtech:machine:486>,<gregtech:machine:487>,null,null,null,null,null,null],
 	"gas_turbine": [<gregtech:machine:490>,<gregtech:machine:491>,<gregtech:machine:492>,null,null,null,null,null,null],
 	"item_collector": [<gregtech:machine:494>,<gregtech:machine:495>,<gregtech:machine:496>,<gregtech:machine:497>,null,null,null,null,null],
@@ -266,6 +267,7 @@ val tiered_items as IItemStack[][string]= {
 	"ceu_16x": [<gregtech:machine:10664>,<gregtech:machine:10672>,<gregtech:machine:10680>,<gregtech:machine:10688>,<gregtech:machine:10696>,<gregtech:machine:10704>,<gregtech:machine:10712>,<gregtech:machine:10720>,null],
 	"cef_16x": [<gregtech:machine:10665>,<gregtech:machine:10673>,<gregtech:machine:10681>,<gregtech:machine:10689>,<gregtech:machine:10697>,<gregtech:machine:10705>,<gregtech:machine:10713>,<gregtech:machine:10721>,null],
 	"casing": [<gregtech:machine_casing:1>,<gregtech:machine_casing:2>,<gregtech:machine_casing:3>,<gregtech:machine_casing:4>,<gregtech:machine_casing:5>,<gregtech:machine_casing:6>,<gregtech:machine_casing:7>,<gregtech:machine_casing:8>,<gregtech:machine_casing:9>],
+	"multiblock_casing": [<gregtech:metal_casing:4>,<gregtech:metal_casing:3>,<gregtech:metal_casing:5>,<gregtech:metal_casing:6>,<gregtech:metal_casing:7>,null,null,null,null],
 	"extruder+": [<gregtech:machine:271>,<gregtech:machine:272>,<gregtech:machine:273>,null,null,null,null,null,null],
 	"extruder": [null,null,null,null,<gregtech:machine:2092>,<gregtech:machine:2093>,<gregtech:machine:2094>,<gregtech:machine:2095>,null],
 	"plasma_furnace": [<gregtech:machine:410>,<gregtech:machine:411>,<gregtech:machine:412>,<gregtech:machine:413>,<gregtech:machine:2148>,<gregtech:machine:2149>,<gregtech:machine:2150>,<gregtech:machine:2151>,null],
@@ -277,6 +279,8 @@ val tiered_items as IItemStack[][string]= {
 	"t_centrifuge": [null,<gregtech:machine:461>,<gregtech:machine:462>,<gregtech:machine:463>,<gregtech:machine:2164>,<gregtech:machine:2165>,<gregtech:machine:2166>,<gregtech:machine:2167>,null],
 	"quantum_chest": [null,<gregtech:machine:1010>,<gregtech:machine:1011>,<gregtech:machine:1012>,<gregtech:machine:1013>,null,null,null,null],
 	"quantum_tank": [null,<gregtech:machine:1020>,<gregtech:machine:1021>,<gregtech:machine:1022>,<gregtech:machine:1023>,null,null,null,null],
+	"rftools_crafter": [null,<rftools:crafter1>,<rftools:crafter2>,<rftools:crafter3>,null,null,null,null,null],
+	"mm_e_input": [<modularmachinery:blockenergyinputhatch:0>,<modularmachinery:blockenergyinputhatch:2>,<modularmachinery:blockenergyinputhatch:3>,<modularmachinery:blockenergyinputhatch:4>,<modularmachinery:blockenergyinputhatch:5>,<modularmachinery:blockenergyinputhatch:6>,<modularmachinery:blockenergyinputhatch:7>,null,null],
 
 	"coke_oven": [<gregtech:machine:526>,null,null,null,null,null,null,null,null],
 	"vacuum_freezer": [null,null,<gregtech:machine:512>,null,null,null,null,null,null],
@@ -299,7 +303,8 @@ val tiered_items as IItemStack[][string]= {
 	"disassembler": [null,<gregtech:machine:3000>,null,null,null,null,null,null,null],
 	"black_hole_unit": [null,null,null,<industrialforegoing:black_hole_unit:0>,null,null,null,null,null],
 	"black_hole_tank": [null,null,null,<industrialforegoing:black_hole_tank:0>,null,null,null,null,null],
-	"magic_absorber": [null,<gregtech:machine:493>,null,null,null,null,null,null,null]
+	"magic_absorber": [null,<gregtech:machine:493>,null,null,null,null,null,null,null],
+	"large_diesel_engine": [null,null,null,<gregtech:machine:517>,null,null,null,null,null]
 } as IItemStack[][string];
 
 val untiered_items as IItemStack[string] = {
@@ -311,7 +316,7 @@ val untiered_items as IItemStack[string] = {
 	"lead": <ore:dustLead>.firstItem,
 	"filter": <item:gregtech:meta_item_1:32729>,
 	"plain_glass": <ore:blockGlassColorless>.firstItem,
-	"iron": <ore:dustTinyIron>.firstItem,
+	"iron": <item:gregtech:meta_item_1:33>,
 	"red_wire": <item:gregtech:cable:237>,
 	"coke_bricks": <item:gregtech:metal_casing:8>,
 	"frost_casing": <item:gregtech:metal_casing:3>,
@@ -334,10 +339,12 @@ val untiered_items as IItemStack[string] = {
 	"nether_star": <ore:dustNetherStar>.firstItem,
 	"europium": <ore:dustEuropium>.firstItem,
 	"americium": <ore:dustAmericium>.firstItem,
-	"void_anvil": <item:cyclicmagic:void_anvil>,
-	"ptfe": <ore:dustPolytetrafluoroethylene>.firstItem
-} as IItemStack[string]
-;
+	"void_anvil": <item:cyclicmagic:void_anvil>.withLore(["I used the disassembler to disassemble the disassembler"]),
+	"ptfe": <ore:dustPolytetrafluoroethylene>.firstItem,
+	"lv_circuit": <item:gregtech:meta_item_2:32507>,
+	"compressed_crafting_table": <item:avaritia:compressed_crafting_table>,
+	"tungstensteel_wire": <item:gregtech:cable:235>
+} as IItemStack[string];
 
 val tiered_results as double[string][string] = {
 	"pump": {"rubber_pump":0.5D,"wire_components":1.0D,"metal_pipe":3.0D,"motor":1.0D,"metal_pump":4.375D} as double[string],
@@ -347,90 +354,93 @@ val tiered_results as double[string][string] = {
 	"field_generator": {"circuit":4.0D,"field_generator_core":1.0D,"wire_osmium":4.0D} as double[string],
 	"emitter": {"circuit":2.0D,"emitter_core":1.0D,"wire_components":2.0D,"metal_emitter":2.0D} as double[string],
 	"sensor": {"circuit":1.0D,"metal_components":4.0D,"emitter_core":1.0D,"metal_emitter":0.5D} as double[string],
-	"furnace": {"hull":1.0D,"wire_hull":2.0D,"wire_coil":8.0D,"circuit":2.0D} as double[string],
-	"macerator": {"hull":1.0D,"wire_hull":3.0D,"motor":1.0D,"piston":1.0D,"grinding_head":1.0D,"circuit":2.0D} as double[string],
-	"alloy_smelter": {"hull":1.0D,"wire_hull":2.0D,"wire_coil":16.0D,"circuit":2.0D} as double[string],
-	"arc_furnace": {"hull":1.0D,"wire_hull":8.0D,"metal_components":3.0D,"graphite":1.0D,"circuit":1.0D} as double[string],
-	"assembler": {"hull":1.0D,"wire_hull":2.0D,"conveyor":2.0D,"robot_arm":2.0D,"circuit":2.0D} as double[string],
+	"furnace": {"hull":1.0D,"wire_machine":2.0D,"wire_coil":8.0D,"circuit":2.0D} as double[string],
+	"macerator": {"hull":1.0D,"wire_machine":3.0D,"motor":1.0D,"piston":1.0D,"grinding_head":1.0D,"circuit":2.0D} as double[string],
+	"alloy_smelter": {"hull":1.0D,"wire_machine":2.0D,"wire_coil":16.0D,"circuit":2.0D} as double[string],
+	"arc_furnace": {"hull":1.0D,"wire_machine":8.0D,"metal_components":3.0D,"graphite":1.0D,"circuit":1.0D} as double[string],
+	"assembler": {"hull":1.0D,"wire_machine":2.0D,"conveyor":2.0D,"robot_arm":2.0D,"circuit":2.0D} as double[string],
 	"autoclave": {"hull":1.0D,"metal_components":4.0D,"circuit":2.0D,"pump":1.0D,"glass":1.0D} as double[string],
-	"bender": {"hull":1.0D,"wire_hull":2.0D,"motor":2.0D,"piston":2.0D,"circuit":2.0D} as double[string],
-	"brewry": {"hull":1.0D,"wire_hull":2.0D,"pump":1.0D,"blazerod":1.0D,"circuit":2.0D,"glass":2.0D} as double[string],
-	"canner": {"hull":1.0D,"wire_hull":2.0D,"pump":1.0D,"circuit":2.0D,"glass":3.0D} as double[string],
-	"centrifuge": {"hull":1.0D,"wire_hull":2.0D,"motor":2.0D,"circuit":4.0D} as double[string],
-	"bath": {"hull":1.0D,"wire_hull":1.0D,"conveyor":2.0D,"pump":1.0D,"glass":2.0D,"circuit":2.0D} as double[string],
-	"chem_reactor": {"hull":1.0D,"wire_hull":2.0D,"motor":1.0D,"circuit":2.0D,"glass":2.0D,"metal_fan":4.25D} as double[string],
-	"compressor": {"hull":1.0D,"wire_hull":2.0D,"piston":2.0D,"circuit":2.0D} as double[string],
-	"cutting_machine": {"hull":1.0D,"wire_hull":2.0D,"motor":1.0D,"conveyor":1.0D,"circuit":1.0D,"glass":1.0D,"cutting_saw":1.0D} as double[string],
-	"distillery": {"hull":1.0D,"wire_hull":2.0D,"piston":1.0D,"blazerod":1.0D,"circuit":2.0D,"glass":2.0D} as double[string],
-	"electrolyzer": {"hull":1.0D,"wire_hull":1.0D,"circuit":2.0D,"glass":1.0D,"wire_electrolyzer":4.0D} as double[string],
-	"separator": {"hull":1.0D,"wire_hull":3.0D,"conveyor":1.0D,"circuit":1.0D,"rod_separator":1.0D,"wire_separator":2.0D} as double[string],
-	"extractor": {"hull":1.0D,"wire_hull":2.0D,"piston":1.0D,"pump":1.0D,"circuit":2.0D,"glass":2.0D} as double[string],
-	"fermenter": {"hull":1.0D,"wire_hull":4.0D,"glass":2.0D,"pump":1.0D,"circuit":1.0D} as double[string],
-	"f_canner": {"hull":1.0D,"wire_hull":2.0D,"glass":4.0D,"pump":1.0D,"circuit":1.0D} as double[string],
-	"f_extractor": {"hull":1.0D,"wire_hull":2.0D,"glass":2.0D,"pump":1.0D,"piston":1.0D,"circuit":2.0D} as double[string],
-	"f_heater": {"hull":1.0D,"wire_hull":2.0D,"glass":1.0D,"pump":2.0D,"circuit":1.0D,"wire_coil":8.0D} as double[string],
-	"f_solidifier": {"hull":1.0D,"wire_hull":2.0D,"glass":1.0D,"pump":2.0D,"circuit":2.0D,"chest":1.0D} as double[string],
-	"forge_hammer": {"hull":1.0D,"wire_hull":4.0D,"piston":1.0D,"iron":31.0D,"circuit":2.0D} as double[string],
-	"forming_press": {"hull":1.0D,"wire_hull":4.0D,"piston":2.0D,"circuit":2.0D} as double[string],
-	"lathe": {"hull":1.0D,"wire_hull":3.0D,"motor":1.0D,"piston":1.0D,"circuit":2.0D,"diamond":1.0D} as double[string],
-	"microwave": {"hull":1.0D,"wire_hull":1.0D,"motor":1.0D,"emitter":1.0D,"circuit":2.0D,"lead":3.0D} as double[string],
+	"bender": {"hull":1.0D,"wire_machine":2.0D,"motor":2.0D,"piston":2.0D,"circuit":2.0D} as double[string],
+	"brewry": {"hull":1.0D,"wire_machine":2.0D,"pump":1.0D,"blazerod":1.0D,"circuit":2.0D,"glass":2.0D} as double[string],
+	"canner": {"hull":1.0D,"wire_machine":2.0D,"pump":1.0D,"circuit":2.0D,"glass":3.0D} as double[string],
+	"centrifuge": {"hull":1.0D,"wire_machine":2.0D,"motor":2.0D,"circuit":4.0D} as double[string],
+	"bath": {"hull":1.0D,"wire_machine":1.0D,"conveyor":2.0D,"pump":1.0D,"glass":2.0D,"circuit":2.0D} as double[string],
+	"chem_reactor": {"hull":1.0D,"wire_machine":2.0D,"motor":1.0D,"circuit":2.0D,"glass":2.0D,"metal_fan":4.25D} as double[string],
+	"compressor": {"hull":1.0D,"wire_machine":2.0D,"piston":2.0D,"circuit":2.0D} as double[string],
+	"cutting_machine": {"hull":1.0D,"wire_machine":2.0D,"motor":1.0D,"conveyor":1.0D,"circuit":1.0D,"glass":1.0D,"cutting_saw":1.0D} as double[string],
+	"distillery": {"hull":1.0D,"wire_machine":2.0D,"piston":1.0D,"blazerod":1.0D,"circuit":2.0D,"glass":2.0D} as double[string],
+	"electrolyzer": {"hull":1.0D,"wire_machine":1.0D,"circuit":2.0D,"glass":1.0D,"wire_electrolyzer":4.0D} as double[string],
+	"separator": {"hull":1.0D,"wire_machine":3.0D,"conveyor":1.0D,"circuit":1.0D,"rod_separator":1.0D,"wire_separator":2.0D} as double[string],
+	"extractor": {"hull":1.0D,"wire_machine":2.0D,"piston":1.0D,"pump":1.0D,"circuit":2.0D,"glass":2.0D} as double[string],
+	"fermenter": {"hull":1.0D,"wire_machine":4.0D,"glass":2.0D,"pump":1.0D,"circuit":1.0D} as double[string],
+	"f_canner": {"hull":1.0D,"wire_machine":2.0D,"glass":4.0D,"pump":1.0D,"circuit":1.0D} as double[string],
+	"f_extractor": {"hull":1.0D,"wire_machine":2.0D,"glass":2.0D,"pump":1.0D,"piston":1.0D,"circuit":2.0D} as double[string],
+	"f_heater": {"hull":1.0D,"wire_machine":2.0D,"glass":1.0D,"pump":2.0D,"circuit":1.0D,"wire_coil":8.0D} as double[string],
+	"f_solidifier": {"hull":1.0D,"wire_machine":2.0D,"glass":1.0D,"pump":2.0D,"circuit":2.0D,"chest":1.0D} as double[string],
+	"forge_hammer": {"hull":1.0D,"wire_machine":4.0D,"piston":1.0D,"iron":31.0D,"circuit":2.0D} as double[string],
+	"forming_press": {"hull":1.0D,"wire_machine":4.0D,"piston":2.0D,"circuit":2.0D} as double[string],
+	"lathe": {"hull":1.0D,"wire_machine":3.0D,"motor":1.0D,"piston":1.0D,"circuit":2.0D,"diamond":1.0D} as double[string],
+	"microwave": {"hull":1.0D,"wire_machine":1.0D,"motor":1.0D,"emitter":1.0D,"circuit":2.0D,"lead":3.0D} as double[string],
 	"mixer": {"hull":1.0D,"motor":1.0D,"circuit":2.0D,"glass":4.0D,"metal_fan":4.25D} as double[string],
-	"washer": {"hull":1.0D,"wire_hull":2.0D,"motor":1.0D,"circuit":2.0D,"glass":1.0D,"metal_fan":8.5D} as double[string],
-	"packager": {"hull":1.0D,"wire_hull":2.0D,"conveyor":1.0D,"robot_arm":1.0D,"circuit":2.0D,"chest":2.0D} as double[string],
-	"unpackager": {"hull":1.0D,"wire_hull":2.0D,"conveyor":1.0D,"robot_arm":1.0D,"circuit":2.0D,"chest":2.0D} as double[string],
-	"polarizer": {"hull":1.0D,"wire_hull":2.0D,"rod_separator":2.0D,"wire_separator":4.0D} as double[string],
-	"sifter": {"hull":1.0D,"wire_hull":2.0D,"piston":2.0D,"circuit":2.0D,"filter":2.0D} as double[string],
-	"wiremill": {"hull":1.0D,"wire_hull":2.0D,"motor":4.0D,"circuit":2.0D} as double[string],
-	"diesel_generator": {"hull":1.0D,"wire_hull":1.0D,"motor":2.0D,"piston":2.0D,"circuit":1.0D,"metal_components":8.0D} as double[string],
-	"steam_turbine": {"hull":1.0D,"wire_hull":1.0D,"motor":2.0D,"circuit":1.0D,"metal_fan":8.5D,"metal_pipe":6.0D} as double[string],
-	"gas_turbine": {"hull":1.0D,"wire_hull":1.0D,"motor":2.0D,"circuit":2.0D,"metal_fan":12.75D} as double[string],
-	"item_collector": {"hull":1.0D,"wire_hull":1.0D,"motor":2.0D,"circuit":2.0D,"metal_fan":12.75D} as double[string],
+	"washer": {"hull":1.0D,"wire_machine":2.0D,"motor":1.0D,"circuit":2.0D,"glass":1.0D,"metal_fan":8.5D} as double[string],
+	"packager": {"hull":1.0D,"wire_machine":2.0D,"conveyor":1.0D,"robot_arm":1.0D,"circuit":2.0D,"chest":2.0D} as double[string],
+	"unpackager": {"hull":1.0D,"wire_machine":2.0D,"conveyor":1.0D,"robot_arm":1.0D,"circuit":2.0D,"chest":2.0D} as double[string],
+	"polarizer": {"hull":1.0D,"wire_machine":2.0D,"rod_separator":2.0D,"wire_separator":4.0D} as double[string],
+	"sifter": {"hull":1.0D,"wire_machine":2.0D,"piston":2.0D,"circuit":2.0D,"filter":2.0D} as double[string],
+	"wiremill": {"hull":1.0D,"wire_machine":2.0D,"motor":4.0D,"circuit":2.0D} as double[string],
+	"diesel_generator": {"hull":1.0D,"wire_machine":1.0D,"motor":2.0D,"piston":2.0D,"circuit":1.0D,"metal_components":8.0D} as double[string],
+	"steam_turbine": {"hull":1.0D,"wire_machine":1.0D,"motor":2.0D,"circuit":1.0D,"metal_fan":8.5D,"metal_pipe":6.0D} as double[string],
+	"gas_turbine": {"hull":1.0D,"wire_machine":1.0D,"motor":2.0D,"circuit":2.0D,"metal_fan":12.75D} as double[string],
+	"item_collector": {"hull":1.0D,"wire_machine":1.0D,"motor":2.0D,"circuit":2.0D,"metal_fan":12.75D} as double[string],
 	"hull": {"casing":1.0D,"wire_hull":2.0D} as double[string],
-	"transformer": {"hull":1.0D,"wire_hull":4.0D} as double[string],
-	"b_buffer_1x": {"hull":1.0D,"wire_hull":4.0D,"chest":1.0D} as double[string],
-	"b_buffer_4x": {"hull":1.0D,"wire_hull":16.0D,"chest":1.0D} as double[string],
-	"b_buffer_9x": {"hull":1.0D,"wire_hull":36.0D,"chest":1.0D} as double[string],
-	"b_buffer_16x": {"hull":1.0D,"wire_hull":64.0D,"chest":1.0D} as double[string],
-	"b_charger_4x": {"hull":1.0D,"wire_hull":64.0D,"chest":1.0D,"circuit":1.0D,"battery":2.0D} as double[string],
+	"transformer": {"hull":1.0D,"wire_machine":4.0D} as double[string],
+	"b_buffer_1x": {"hull":1.0D,"wire_machine":4.0D,"chest":1.0D} as double[string],
+	"b_buffer_4x": {"hull":1.0D,"wire_machine":16.0D,"chest":1.0D} as double[string],
+	"b_buffer_9x": {"hull":1.0D,"wire_machine":36.0D,"chest":1.0D} as double[string],
+	"b_buffer_16x": {"hull":1.0D,"wire_machine":64.0D,"chest":1.0D} as double[string],
+	"b_charger_4x": {"hull":1.0D,"wire_machine":64.0D,"chest":1.0D,"circuit":1.0D,"battery":2.0D} as double[string],
 	"i_input": {"hull":1.0D,"chest":1.0D} as double[string],
 	"i_output": {"hull":1.0D,"chest":1.0D} as double[string],
 	"f_input": {"hull":1.0D,"plain_glass":1.0D} as double[string],
 	"f_output": {"hull":1.0D,"plain_glass":1.0D} as double[string],
-	"e_input": {"hull":1.0D,"wire_hull":1.0D} as double[string],
-	"e_output": {"hull":1.0D,"wire_hull":1.0D} as double[string],
+	"e_input": {"hull":1.0D,"wire_machine":1.0D} as double[string],
+	"e_output": {"hull":1.0D,"wire_machine":1.0D} as double[string],
 	"fisher": {"hull":1.0D,"motor":3.0D,"piston":2.0D,"pump":1.0D,"circuit":2.0D} as double[string],
-	"f_pump": {"hull":1.0D,"pump":4.0D,"circuit":2.0D,"metal_pipe":2.0D} as double[string],
+	"f_pump": {"hull":1.0D,"pump":4.0D,"circuit":2.0D,"metal_pipe":6.0D} as double[string],
 	"air_collector": {"hull":1.0D,"pump":2.0D,"circuit":1.0D,"filter":1.0D,"iron":1.5D} as double[string],
-	"ceu_1x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_hull":4.0D,"red_wire":2.0D} as double[string],
-	"cef_1x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_hull":4.0D,"red_wire":2.0D} as double[string],
-	"ceu_4x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_hull":16.0D,"red_wire":8.0D} as double[string],
-	"cef_4x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_hull":16.0D,"red_wire":8.0D} as double[string],
-	"ceu_9x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_hull":36.0D,"red_wire":18.0D} as double[string],
-	"cef_9x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_hull":36.0D,"red_wire":18.0D} as double[string],
-	"ceu_16x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_hull":64.0D,"red_wire":32.0D} as double[string],
-	"cef_16x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_hull":64.0D,"red_wire":32.0D} as double[string],
+	"ceu_1x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_machine":4.0D,"red_wire":2.0D} as double[string],
+	"cef_1x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_machine":4.0D,"red_wire":2.0D} as double[string],
+	"ceu_4x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_machine":16.0D,"red_wire":8.0D} as double[string],
+	"cef_4x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_machine":16.0D,"red_wire":8.0D} as double[string],
+	"ceu_9x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_machine":36.0D,"red_wire":18.0D} as double[string],
+	"cef_9x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_machine":36.0D,"red_wire":18.0D} as double[string],
+	"ceu_16x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_machine":64.0D,"red_wire":32.0D} as double[string],
+	"cef_16x": {"hull":1.0D,"circuit":1.0D,"chest":1.0D,"wire_machine":64.0D,"red_wire":32.0D} as double[string],
 	"casing": {"metal_hull":8.0D} as double[string],
+	"multiblock_casing": {"metal_hull":2.45833333333D} as double[string],
 	"extruder+": {"hull":1.0D,"piston":1.0D,"circuit":2.0D,"metal_pipe":3.0D,"wire_coil":16.0D} as double[string],
 	"extruder": {"hull":1.0D,"piston":1.0D,"circuit":2.0D,"metal_pipe":3.0D,"wire_coil":16.0D} as double[string],
-	"plasma_furnace": {"hull":1.0D,"circuit":2.0D,"wire_hull":8.0D,"pump":2.0D,"graphite":1.0D,"metal_components":1.0D} as double[string],
-	"mass_fabricator": {"hull":1.0D,"circuit":4.0D,"field_generator":2.0D,"wire_hull":8.0D} as double[string],
-	"replicator": {"hull":1.0D,"circuit":4.0D,"field_generator":1.0D,"emitter":4.0D,"wire_hull":4.0D} as double[string],
-	"naquadah_reactor": {"hull":1.0D,"field_generator":2.0D,"wire_hull":8.0D,"circuit":2.0D,"rod_naqreactor":2.0D} as double[string],
+	"plasma_furnace": {"hull":1.0D,"circuit":2.0D,"wire_machine":8.0D,"pump":2.0D,"graphite":1.0D,"metal_components":1.0D} as double[string],
+	"mass_fabricator": {"hull":1.0D,"circuit":4.0D,"field_generator":2.0D,"wire_machine":8.0D} as double[string],
+	"replicator": {"hull":1.0D,"circuit":4.0D,"field_generator":1.0D,"emitter":4.0D,"wire_machine":4.0D} as double[string],
+	"naquadah_reactor": {"hull":1.0D,"field_generator":2.0D,"wire_machine":8.0D,"circuit":2.0D,"rod_naqreactor":2.0D} as double[string],
 	"rotor_holder": {"hull":1.0D,"wire_components":112.0D,"metal_holder":4.0D} as double[string],
-	"engraver": {"hull":1.0D,"wire_hull":2.0D,"piston":2.0D,"circuit":3.0D,"emitter":1.0D} as double[string],
-	"t_centrifuge": {"hull":1.0D,"wire_hull":2.0D,"motor":2.0D,"wire_coil":8.0D,"circuit":2.0D} as double[string],
+	"engraver": {"hull":1.0D,"wire_machine":2.0D,"piston":2.0D,"circuit":3.0D,"emitter":1.0D} as double[string],
+	"t_centrifuge": {"hull":1.0D,"wire_machine":2.0D,"motor":2.0D,"wire_coil":8.0D,"circuit":2.0D} as double[string],
 	"quantum_chest": {"hull":1.0D,"metal_components":3.0D,"circuit":4.0D,"field_generator":1.0D} as double[string],
 	"quantum_tank": {"hull":1.0D,"metal_components":3.0D,"circuit":4.0D,"field_generator":1.0D} as double[string],
+	"rftools_crafter": {"hull":1.0D,"compressed_crafting_table":1.0D,"lv_circuit":1.0D} as double[string],
+	"mm_e_input": {"e_input":1.0D,"red_wire":2.0D},
 
 	"coke_oven": {"iron":4.0D,"coke_bricks":4.0D} as double[string],
-	"vacuum_freezer": {"frost_casing":1.0D,"wire_hull":2.0D,"pump":3.0D,"atomic_alloy":3.0D} as double[string],
-	"implosion_compressor": {"solidsteel_casing":1.0D,"wire_hull":2.0D,"circuit":3.0D,"obsidian":3.0D} as double[string],
+	"vacuum_freezer": {"frost_casing":1.0D,"wire_machine":2.0D,"pump":3.0D,"atomic_alloy":3.0D} as double[string],
+	"implosion_compressor": {"solidsteel_casing":1.0D,"wire_machine":2.0D,"circuit":3.0D,"obsidian":3.0D} as double[string],
 	"pyrolyse": {"hull":1.0D,"piston":2.0D,"pump":1.0D,"circuit":3.0D,"wire_coil":8.0D} as double[string],
 	"cracker": {"hull":1.0D,"pump":2.0D,"circuit":2.0D,"cupronickel_wire":64.0D} as double[string],
 	"distillation_tower": {"hull":1.0D,"pump":2.0D,"circuit":4.0D,"metal_pipe":12.0D} as double[string],
-	"ebf": {"circuit":1.0D,"heat_casing":1.0D,"wire_hull":2.0D,"furnace":1.0D,"graphite":3.0D} as double[string],
+	"ebf": {"circuit":1.0D,"heat_casing":1.0D,"wire_machine":2.0D,"furnace":1.0D,"graphite":3.0D} as double[string],
 	"multismelter": {"furnace":2.0D,"circuit":3.0D,"heat_casing":2.0D,"annealed_wire":2.0D} as double[string],
-	"lbb": {"circuit":4.0D,"wire_hull":4.0D,"bronze_casing":1.0D} as double[string],
+	"lbb": {"circuit":4.0D,"wire_machine":4.0D,"bronze_casing":1.0D} as double[string],
 	"lsb": {"circuit":2.0D} as double[string],
 	"large_steam_turbine": {"hull":1.0D,"circuit":2.0D,"steel":16.0D,"vinteum":2.0D} as double[string],
 	"large_gas_turbine": {"hull":1.0D,"circuit":2.0D,"metal_pump":28.0D} as double[string],
@@ -443,7 +453,8 @@ val tiered_results as double[string][string] = {
 	"disassembler": {"hull":1.0D,"robot_arm":3.0D,"circuit":4.0D,"void_anvil":1.0D} as double[string],
 	"black_hole_unit": {"hull":1.0D,"field_generator":1.0D,"circuit":4.0D,"ptfe":3.0D} as double[string],
 	"black_hole_tank": {"hull":1.0D,"field_generator":1.0D,"circuit":4.0D,"ptfe":3.0D} as double[string],
-	"magic_absorber": {"hull":1.0D,"pump":4.0D,"sensor":2.0D,"circuit":2.0D} as double[string]
+	"magic_absorber": {"hull":1.0D,"pump":4.0D,"sensor":2.0D,"circuit":2.0D} as double[string],
+	"large_diesel_engine": {"hull":1.0D,"tungstensteel_wire":1.0D,"motor":2.0D,"piston":2.0D,"circuit":1.0D,"metal_components":8.0D} as double[string]
 } as double[string][string];
 
 // amount of various items the actual items give, eg if we specify tiny dust for metal_hull this would be 0.11
@@ -455,7 +466,7 @@ val tiered_results as double[string][string] = {
 // the correct fraction.  Also, ultimet pipes can be made from tungsten pipes and ev pumps, but they are
 // pulverizable into ultimet dust by default so I did not consider this exploitable
 val item_units as double[string] = {
-	"iron": 0.25D,
+	"iron": 0.111111D,
 	"metal_hull": 0.25D,
 	"metal_components": 0.111111D,
 	"metal_pump": 0.111111D,
@@ -520,6 +531,9 @@ val yield_multipliers as double[][string] = {
 	"americium": [0.0D, 0.0D, 0.6D, 0.6D],
 	"void_anvil": [0.0D, 0.0D, 0.6D, 0.6D],
 	"ptfe": [0.0D, 0.0D, 0.6D, 0.6D],
+	"lv_circuit": [0.0D, 0.0D, 0.6D, 0.6D],
+	"compressed_crafting_table": [0.0D, 0.0D, 0.6D, 0.6D],
+	"tungstensteel_wire": [0.0D, 0.0D, 0.4D, 0.6D],
 	"circuit": [0.0D, 0.0D, 0.6D, 0.6D],
 	"motor": [0.0D, 0.0D, 0.6D, 0.6D],
 	"pump": [1.0D, 1.0D, 0.7D, 0.6D],
@@ -543,6 +557,7 @@ val yield_multipliers as double[][string] = {
 	"rubber_pump": [0.0D, 0.0D, 0.3D, 0.5D],
 	"rubber_conveyor": [0.0D, 0.0D, 0.3D, 0.5D],
 	"wire_hull": [0.0D, 0.0D, 0.5D, 0.6D],
+	"wire_machine": [0.0D, 0.0D, 0.5D, 0.6D],
 	"wire_components": [0.0D, 0.0D, 0.4D, 0.6D],
 	"wire_coil": [0.0D, 0.0D, 0.5D, 0.7D],
 	"wire_osmium": [0.0D, 0.0D, 0.5D, 0.3D],
@@ -589,7 +604,7 @@ val yield_multipliers as double[][string] = {
 	"steam_turbine": [0.9D, 0.9D, 0.0D, 0.0D],
 	"gas_turbine": [0.9D, 0.9D, 0.0D, 0.0D],
 	"item_collector": [0.5D, 0.5D, 0.0D, 0.0D],
-	"hull": [1.0D, 1.0D, 1.0D, 0.0D],
+	"hull": [1.0D, 1.0D, 1.0D, 0.4D],
 	"transformer": [1.0D, 1.0D, 0.0D, 0.0D],
 	"b_buffer_1x": [0.7D, 0.7D, 0.0D, 0.0D],
 	"b_buffer_4x": [0.7D, 0.7D, 0.0D, 0.0D],
@@ -600,7 +615,7 @@ val yield_multipliers as double[][string] = {
 	"i_output": [0.6D, 0.6D, 0.0D, 0.0D],
 	"f_input": [0.6D, 0.6D, 0.0D, 0.0D],
 	"f_output": [0.6D, 0.6D, 0.0D, 0.0D],
-	"e_input": [0.6D, 0.6D, 0.0D, 0.0D],
+	"e_input": [0.6D, 0.6D, 0.6D, 0.6D],
 	"e_output": [0.6D, 0.6D, 0.0D, 0.0D],
 	"fisher": [0.5D, 0.5D, 0.0D, 0.0D],
 	"f_pump": [0.5D, 0.5D, 0.0D, 0.0D],
@@ -614,6 +629,7 @@ val yield_multipliers as double[][string] = {
 	"ceu_16x": [0.7D, 0.7D, 0.0D, 0.0D],
 	"cef_16x": [0.6D, 0.6D, 0.0D, 0.0D],
 	"casing": [1.0D, 1.0D, 1.0D, 0.0D],
+	"multiblock_casing": [1.0D, 1.0D, 1.0D, 1.0D],
 	"extruder+": [0.9D, 0.9D, 0.0D, 0.0D],
 	"extruder": [0.8D, 0.8D, 0.0D, 0.0D],
 	"plasma_furnace": [0.6D, 0.6D, 0.0D, 0.0D],
@@ -625,6 +641,8 @@ val yield_multipliers as double[][string] = {
 	"t_centrifuge": [0.7D, 0.7D, 0.0D, 0.0D],
 	"quantum_chest": [0.6D, 0.6D, 0.0D, 0.0D],
 	"quantum_tank": [0.6D, 0.6D, 0.0D, 0.0D],
+	"rftools_crafter": [0.0D, 0.7D, 0.0D, 0.0D],
+	"mm_e_input": [0.6D, 0.6D, 0.0D, 0.0D],
 
 	"coke_oven": [0.6D, 0.6D, 0.0D, 0.0D],
 	"vacuum_freezer": [0.6D, 0.6D, 0.0D, 0.0D],
@@ -647,11 +665,12 @@ val yield_multipliers as double[][string] = {
 	"disassembler": [0.6D, 0.6D, 0.0D, 0.0D],
 	"black_hole_unit": [0.6D, 0.6D, 0.0D, 0.0D],
 	"black_hole_tank": [0.6D, 0.6D, 0.0D, 0.0D],
-	"magic_absorber": [0.6D, 0.6D, 0.0D, 0.0D]
+	"magic_absorber": [0.6D, 0.6D, 0.0D, 0.0D],
+	"large_diesel_engine": [0.6D, 0.6D, 0.0D, 0.0D]
 } as double[][string];
 
-// used as a set of what UV items need their wire_hull yield divided by 4
-val uv_wire_hull_mod as bool[string] = {
+// used as a set of what UV items need their wire_machine yield divided by 4
+val uv_wire_machine_mod as bool[string] = {
 	"arc_furnace": true,
 	"plasma_furnace": true,
 	"mass_fabricator": true,
@@ -721,9 +740,9 @@ for item_name, base_result_map in tiered_results {
 				if(i >= 5 && high_tiered_extras has item_name && high_tiered_extras[item_name] has component_name){
 					component_amount += high_tiered_extras[item_name][component_name];
 				}
-				if(i == 7 && component_name == "wire_hull" && (uv_wire_hull_mod has item_name)){
+				if(i == 7 && component_name == "wire_machine" && (uv_wire_machine_mod has item_name)){
 					component_amount *= 0.25D;
-				}else if(i == 1 && component_name == "wire_hull" && item_name == "bender"){
+				}else if(i == 1 && component_name == "wire_machine" && item_name == "bender"){
 					component_amount *= 0.5D;
 				}
 				if(item_units has component_name){
@@ -744,7 +763,7 @@ for item_name, base_result_map in tiered_results {
 					if(component_guaranteed_amount > 0){
 						guaranteed_outputs += component_item*component_guaranteed_amount;
 					}
-					if(component_chanced_amount > 0){
+					if(component_chanced_amount > 0 && component_chance > 0.0D){
 						recipeBuilder.chancedOutput(component_item*component_chanced_amount, (component_chance*10000.0D) as int, ((1.0D-component_chance)*1300.0D) as int);
 					}
 				}
@@ -780,10 +799,10 @@ for item_name, base_result_map in tiered_results {
 				}
 			}
 			if(item_name == "transformer"){
-				val component_guaranteed_frac as double = (item_guaranteed_multiplier*yield_multipliers["wire_hull"][2]) as double;
-				val component_chance as double = (item_chance_multiplier*yield_multipliers["wire_hull"][3]) as double;
+				val component_guaranteed_frac as double = (item_guaranteed_multiplier*yield_multipliers["wire_machine"][2]) as double;
+				val component_chance as double = (item_chance_multiplier*yield_multipliers["wire_machine"][3]) as double;
 				val component_amount as double = 1.0D as double;
-				val component_item as IItemStack = tiered_items["wire_hull"][i + 1] as IItemStack;
+				val component_item as IItemStack = tiered_items["wire_machine"][i + 1] as IItemStack;
 				var component_guaranteed_amount as int = (component_amount*component_guaranteed_frac) as int;
 				if(component_guaranteed_amount == 0 && component_guaranteed_frac != 0 && component_amount >= 1.0D){
 					component_guaranteed_amount += 1;
@@ -797,12 +816,131 @@ for item_name, base_result_map in tiered_results {
 					recipeBuilder.chancedOutput(component_item*component_chanced_amount, (component_chance*10000.0D) as int, ((1.0D-component_chance)*1300.0D) as int);
 				}
 			}
-			if(guaranteed_outputs.length > 0){
-				recipeBuilder.outputs(guaranteed_outputs);
+			recipeBuilder.outputs(guaranteed_outputs);
+			if(guaranteed_outputs.length == 0){
+				print("Potentially empty recipe output!");
 			}
 			recipeBuilder.buildAndRegister();
 		}
 	}
+}
+
+//begin non tiered recipes
+val nontiered_recipes as IItemStack[][IItemStack] = {
+	<gregtech:machine:527>*1: [<gregtech:metal_casing:8>*1,<minecraft:bucket:0>*2],
+	<gregtech:multiblock_casing:0>*1: [<gregtech:meta_item_1:1072>*101],
+	<gregtech:turbine_casing:2>*1: [<gregtech:meta_item_1:1184>*5,<gregtech:meta_item_1:1072>*12],
+	<gregtech:metal_casing:2>*1: [<gregtech:meta_item_1:1126>*9],
+	<rftools:modular_storage:0>*1: [<gregtech:machine:501>*1,<gregtech:cable:237>*4,<mekanism:machineblock:13>*1,<gregtech:meta_item_1:2201>*3],
+	<mekanism:machineblock3:4>*1: [<gregtech:machine_casing:1>*1,<gregtech:cable:237>*3,<gregtech:meta_item_1:1071>*16,<gregtech:meta_item_1:32519>*1],
+	<mekanism:machineblock3:6>*1: [<gregtech:machine_casing:1>*1,<gregtech:cable:237>*1,<gregtech:meta_item_1:1071>*16,<gregtech:meta_item_1:32519>*1,<gregtech:metal_casing:8>*2],
+	<mekanism:machineblock2:13>*1: [<gregtech:machine:502>*1,<gregtech:meta_item_1:32518>*2,<mekanism:reinforcedalloy:0>*3,<gregtech:meta_item_1:1111>*3],
+	<gregtech:wire_coil:7>*1: [<gregtech:cable:354>*16],
+	<gregtech:wire_coil:8>*1: [<gregtech:wire_coil:7>*1,<gregtech:meta_item_2:32497>*4,<gregtech:meta_item_1:32671>*2,<gregtech:meta_item_2:32436>*2],
+	<gregtech:metal_casing:0>*1: [<gregtech:meta_item_1:1095>*8,<minecraft:brick:0>*1],
+	<gregtech:boiler_firebox_casing:0>*1: [<gregtech:meta_item_1:1095>*9],
+	<gregtech:boiler_casing:0>*1: [<gregtech:meta_item_1:1095>*23],
+	<gregtech:boiler_firebox_casing:1>*1: [<gregtech:meta_item_1:1184>*9],
+	<gregtech:boiler_casing:1>*1: [<gregtech:meta_item_1:1184>*23],
+	<gregtech:turbine_casing:3>*1: [<gregtech:meta_item_1:233>*4,<gregtech:meta_item_1:129>*18],
+	<gregtech:turbine_casing:5>*1: [<gregtech:meta_item_1:233>*1,<gregtech:meta_item_1:129>*6,<gregtech:meta_item_1:183>*18],
+	<gregtech:turbine_casing:6>*1: [<gregtech:meta_item_1:233>*1,<gregtech:meta_item_1:129>*6,<gregtech:meta_item_1:235>*18],
+	<gregtech:multiblock_casing:2>*1: [<gregtech:meta_item_2:32495>*2,<gregtech:meta_item_1:235>*7,<gregtech:cable:87>*21,<gregtech:meta_item_1:299>*3,<gregtech:meta_item_1:74>*3],
+	<gtadditions:ga_multiblock_casing:1>*1: [<gregtech:meta_item_1:32654>*1,<gregtech:meta_item_1:235>*6,<gregtech:meta_item_1:184>*18],
+	<enderio:block_transceiver:0>*1: [<thermalfoundation:glass_alloy:0>*2,<gregtech:meta_item_1:32683>*1,<gregtech:meta_item_1:2331>*2,<gregtech:meta_item_1:14800>*4],
+	<gregtech:multiblock_casing:3>*1: [<gregtech:machine_casing:6>*1,<gregtech:meta_item_1:1235>*24],
+	<gregtech:multiblock_casing:4>*1: [<gregtech:multiblock_casing:3>*1,<gregtech:meta_item_1:1002>*24],
+	<thermalexpansion:machine:9>*1: [<gregtech:machine:502>*1,<mekanism:reinforcedalloy:0>*1,<gregtech:meta_item_2:32450>*1,<gregtech:meta_item_1:1801>*32,<gregtech:meta_item_1:94>*4],
+	<thermalexpansion:device:0>*1: [<gregtech:meta_item_1:1095>*4,<gregtech:meta_item_1:1033>*24],
+	<modularmachinery:blockcontroller:0>*1: [<modularmachinery:blockcasing:0>*1,<gregtech:meta_item_2:32433>*3,<gregtech:meta_item_2:32507>*1,<gregtech:meta_item_1:1026>*8],
+	<modulardiversity:blockmekheatinput:0>*1: [<gregtech:machine:501>*1,<gregtech:meta_item_2:32450>*1,<gregtech:cable:109>*14],
+	<modularmachinery:blockcasing:1>*1: [<modularmachinery:blockcasing:2>*1,<thaumcraft:bellows:0>*3,<gregtech:meta_item_1:1184>*16,<gregtech:meta_item_1:1071>*17],
+	<modulardiversity:blockmanainputhatch:0>*1: [<modularmachinery:blockenergyinputhatch:0>*1,<astralsorcery:itemcraftingcomponent:0>*2,<gregtech:meta_item_1:805>*4,<gregtech:meta_item_1:2802>*2],
+	<modulardiversity:blockmeklaseracceptor:0>*1: [<modularmachinery:blockcasing:0>*4,<gregtech:meta_item_1:32691>*1,<advancedrocketry:concrete:0>*3,<botania:lens:0>*1],
+	<modularmachinery:blockcasing:0>*1: [<gregtech:meta_item_1:1094>*4,<gregtech:meta_item_1:1095>*12,<gregtech:meta_item_1:1033>*8,<gregtech:cable:237>*7],
+	<modularmachinery:blockcasing:2>*1: [<modularmachinery:blockcasing:0>*1,<minecraft:redstone:0>*2,<gregtech:meta_item_1:1033>*2,<minecraft:gravel:0>*1],
+	<modularmachinery:blockcasing:4>*1: [<modularmachinery:blockcasing:0>*1,<minecraft:obsidian:0>*1],
+	<modularmachinery:blockinputbus:0>*1: [<modularmachinery:blockcasing:0>*1,<minecraft:hopper:0>*1,<minecraft:chest:0>*1],
+	<modularmachinery:blockinputbus:2>*1: [<modularmachinery:blockinputbus:0>*1,<gregtech:meta_item_1:1184>*8,<gregtech:meta_item_1:33>*4,<minecraft:stone:0>*1],
+	<modularmachinery:blockinputbus:4>*1: [<modularmachinery:blockinputbus:2>*1,<minecraft:obsidian:0>*2,<gregtech:meta_item_1:1001>*8,<gregtech:meta_item_1:184>*4],
+	<modularmachinery:blockinputbus:6>*1: [<modularmachinery:blockinputbus:4>*1,<minecraft:obsidian:0>*2,<gregtech:meta_item_1:1072>*8,<gregtech:meta_item_1:1>*4],
+	<modularmachinery:blockfluidinputhatch:0>*1: [<modularmachinery:blockcasing:0>*1,<minecraft:hopper:0>*1,<minecraft:bucket:0>*1],
+	<modularmachinery:blockfluidinputhatch:2>*1: [<modularmachinery:blockfluidinputhatch:0>*1,<gregtech:meta_item_1:1184>*28,<thermalexpansion:tank:0>*1],
+	<modularmachinery:blockfluidinputhatch:5>*1: [<modularmachinery:blockfluidinputhatch:2>*1,<gregtech:meta_item_1:1183>*28,<gregtech:meta_item_1:32405>*1],
+	<modularmachinery:blockfluidinputhatch:7>*1: [<modularmachinery:blockfluidinputhatch:5>*1,<gregtech:meta_item_1:32406>*4,<gregtech:meta_item_1:2212>*4],
+	<mekanism:machineblock3:0>*1: [<mekanism:teleportationcore:0>*1,<gregtech:meta_item_2:32499>*2,<mekanism:atomicalloy:0>*2,<mekanism:ingot:0>*4],
+	<mekanism:basicblock:14>*1: [<gregtech:machine:501>*1,<mekanism:basicblock2:0>*5,<mekanism:basicblock:10>*1,<gregtech:meta_item_2:32507>*2],
+	<mekanism:basicblock:15>*1: [<mekanism:basicblock2:0>*4,<gregtech:meta_item_2:32507>*1],
+	<mekanism:basicblock2:0>*1: [<gregtech:meta_item_1:1184>*8,<gregtech:meta_item_1:1095>*5],
+	<mekanism:machineblock:12>*1: [<gregtech:machine:501>*1,<gregtech:meta_item_1:32610>*4,<mekanism:enrichedalloy:0>*2,<gregtech:meta_item_1:1184>*24],
+	<mekanism:machineblock:4>*1: [<mekanism:basicblock:8>*1,<mekanism:robit:0>*1,<mekanism:machineblock:15>*2,<mekanism:atomicalloy:0>*2,<mekanism:teleportationcore:0>*2,<gregtech:meta_item_2:32507>*1],
+	<mekanism:machineblock:11>*1: [<mekanism:basicblock:8>*4,<mekanism:teleportationcore:0>*1,<gregtech:meta_item_2:32507>*4],
+	<mekanism:machineblock:13>*1: [<gregtech:meta_item_1:1184>*20,<gregtech:meta_item_2:32507>*1,<minecraft:chest:0>*2,<minecraft:glass:0>*1],
+	<mekanism:machineblock2:0>*1: [<mekanism:gastank:0>*1,<gregtech:meta_item_1:32518>*1,<thermalexpansion:tank:0>*1,<gregtech:meta_item_2:32507>*2,<gregtech:meta_item_1:1001>*16],
+	<mekanism:robit:0>*1: [<mekanism:machineblock:13>*1,<gregtech:meta_item_1:32518>*2,<mekanism:ingot:0>*2,<mekanism:atomicalloy:0>*1,<gregtech:meta_item_1:1184>*4],
+	<mekanism:machineblock:15>*1: [<gregtech:meta_item_2:32507>*1,<minecraft:piston:0>*1,<gregtech:meta_item_1:33>*63],
+	<mekanism:basicblock:8>*1: [<gregtech:meta_item_1:1184>*16,<thermalfoundation:glass:3>*4,<mekanism:reinforcedalloy:0>*1,<minecraft:redstone:0>*2],
+	<mekanism:gastank:0>*1: [<gregtech:meta_item_1:1001>*24,<thermalfoundation:material:512>*1,<minecraft:glass_pane:0>*1],
+	<mekanism:machineblock:14>*1: [<gregtech:meta_item_1:32528>*1,<gregtech:meta_item_1:1184>*12,<gregtech:meta_item_1:33>*54,<minecraft:wool:0>*3],
+	<thermalexpansion:machine:11>*1: [<gregtech:machine:502>*1,<minecraft:crafting_table:0>*1,<thermalfoundation:material:513>*1,<gregtech:meta_item_1:71>*18,<gregtech:meta_item_1:1018>*32],
+	<thermalexpansion:machine:14>*1: [<gregtech:machine:500>*1,<minecraft:piston:0>*1,<thermalfoundation:material:513>*1,<gregtech:meta_item_1:126>*18,<gregtech:meta_item_1:1018>*32],
+	<thermalexpansion:device:1>*1: [<extrautils2:trashcan:0>*1,<extrautils2:trashcanfluid:0>*1,<gregtech:meta_item_1:33>*9],
+	<thermalexpansion:device:3>*1: [<gregtech:machine_casing:1>*1,<thermalfoundation:material:512>*1,<gregtech:meta_item_1:1033>*32,<gregtech:meta_item_1:18>*9,<minecraft:planks:0>*2],
+	<thermalexpansion:device:8>*1: [<gregtech:machine_casing:1>*1,<thermalfoundation:material:512>*1,<thermalfoundation:tome_experience:0>*1,<gregtech:meta_item_1:1033>*32,<gregtech:meta_item_1:26>*18],
+	<thermalexpansion:device:9>*1: [<gregtech:machine_casing:1>*1,<thermalfoundation:material:512>*1,<thermalfoundation:glass:3>*1,<gregtech:meta_item_1:1033>*32,<gregtech:meta_item_1:62>*18],
+	<thermalexpansion:device:12>*1: [<gregtech:machine_casing:1>*1,<thermalfoundation:material:512>*1,<minecraft:hopper:0>*1,<gregtech:meta_item_1:1033>*32,<gregtech:meta_item_1:71>*18],
+	<industrialforegoing:sludge_refiner:0>*1: [<gregtech:machine:502>*1,<gregtech:metal_casing:8>*2,<industrialforegoing:plastic:0>*2,<minecraft:bucket:0>*1,<gregtech:meta_item_1:1033>*16,<gregtech:meta_item_1:1026>*16],
+	<industrialforegoing:mob_slaughter_factory:0>*1: [<gregtech:machine:502>*1,<industrialforegoing:plastic:0>*2,<minecraft:redstone:0>*1,<gregtech:meta_item_1:1026>*16,<minecraft:iron_sword:0>*2,<minecraft:iron_axe:0>*2],
+	<industrialforegoing:crop_sower:0>*1: [<gregtech:machine:502>*1,<industrialforegoing:plastic:0>*2,<minecraft:redstone:0>*1,<minecraft:flower_pot:0>*1,<minecraft:piston:0>*2,<gregtech:meta_item_1:1033>*32],
+	<industrialforegoing:crop_recolector:0>*1: [<gregtech:machine:502>*1,<industrialforegoing:plastic:0>*2,<gregtech:meta_item_1:1026>*32,<minecraft:redstone:0>*1,<minecraft:iron_hoe:0>*1,<minecraft:iron_axe:0>*2],
+	<industrialforegoing:water_condensator:0>*1: [<gregtech:machine:502>*1,<industrialforegoing:plastic:0>*2,<minecraft:piston:0>*2,<gregtech:meta_item_1:1033>*44,<minecraft:redstone:0>*1],
+	<industrialforegoing:block_destroyer:0>*1: [<gregtech:machine:502>*1,<industrialforegoing:plastic:0>*2,<gregtech:meta_item_1:1033>*32,<minecraft:redstone:0>*1,<gregtech:meta_item_1:1026>*16,<minecraft:iron_pickaxe:0>*1,<minecraft:iron_shovel:0>*1],
+	<industrialforegoing:block_placer:0>*1: [<gregtech:machine:502>*1,<extrautils2:ingredients:1>*1,<minecraft:dropper:0>*3,<gregtech:meta_item_1:1141>*12],
+	<industrialforegoing:animal_independence_selector:0>*1: [<gregtech:machine:501>*1,<gregtech:meta_item_1:1026>*16,<tconstruct:edible:2>*2,<thermalfoundation:material:17>*3,<gregtech:meta_item_1:1141>*8],
+	<industrialforegoing:animal_stock_increaser:0>*1: [<gregtech:machine:501>*1,<industrialforegoing:plastic:0>*2,<gregtech:meta_item_1:1033>*16,<tconstruct:edible:2>*2,<minecraft:golden_carrot:0>*2,<minecraft:golden_apple:0>*1],
+	<industrialforegoing:animal_resource_harvester:0>*1: [<gregtech:machine:502>*1,<industrialforegoing:plastic:0>*2,<gregtech:meta_item_1:1026>*32,<gregtech:meta_item_1:1033>*28],
+	<industrialforegoing:mob_detector:0>*1: [<gregtech:machine_casing:0>*1,<minecraft:observer:0>*2,<minecraft:comparator:0>*1,<minecraft:repeater:0>*2,<industrialforegoing:plastic:0>*3],
+	<industrialforegoing:black_hole_controller_reworked:0>*1: [<gregtech:machine:504>*1,<enderstorage:ender_storage:0>*1,<industrialforegoing:pink_slime_ingot:0>*2,<gregtech:meta_item_1:1145>*16,<gregtech:meta_item_1:1331>*3],
+	<industrialforegoing:dye_mixer:0>*1: [<gregtech:machine:500>*1,<industrialforegoing:plastic:0>*4,<gregtech:meta_item_2:1026>*1,<gregtech:meta_item_2:32425>*1,<gregtech:meta_item_2:32428>*1,<gregtech:meta_item_2:32427>*1],
+	<industrialforegoing:spores_recreator:0>*1: [<gregtech:machine:502>*1,<industrialforegoing:plastic:0>*5,<gregtech:meta_item_1:1033>*16],
+	<industrialforegoing:animal_growth_increaser:0>*1: [<gregtech:machine:502>*1,<industrialforegoing:plastic:0>*2,<minecraft:wheat:0>*3,<gregtech:meta_item_1:1026>*16,<gregtech:meta_item_2:32424>*2],
+	<industrialforegoing:hydrator:0>*1: [<gregtech:machine:502>*1,<minecraft:piston:0>*1,<industrialforegoing:fertilizer:0>*2,<industrialforegoing:plastic:0>*2,<gregtech:meta_item_1:1033>*44],
+	<industrialforegoing:wither_builder:0>*1: [<gregtech:machine:502>*1,<minecraft:soul_sand:0>*3,<minecraft:skull:1>*2,<gregtech:meta_item_1:1141>*8,<gregtech:meta_item_1:2331>*1],
+	<industrialforegoing:fluid_pump:0>*1: [<gregtech:machine:501>*1,<gregtech:meta_item_1:1026>*16,<industrialforegoing:plastic:0>*4,<minecraft:bucket:0>*2,<thermalexpansion:tank:0>*1],
+	<industrialforegoing:plant_interactor:0>*1: [<gregtech:machine:502>*1,<industrialforegoing:plastic:0>*2,<gregtech:meta_item_1:1026>*32,<minecraft:iron_hoe:0>*3,<minecraft:redstone:0>*1],
+	<industrialforegoing:froster:0>*1: [<gregtech:machine_casing:0>*1,<industrialforegoing:plastic:0>*4,<gregtech:meta_item_1:1026>*16],
+	<thermalfoundation:material:513>*1: [<minecraft:redstone:0>*2,<gregtech:meta_item_1:1026>*4],
+	<gregtech:machine:500>*1: [<gregtech:machine_casing:0>*1,<gregtech:cable:237>*2],
+	<gregtech:machine_casing:0>*1: [<gregtech:meta_item_1:1197>*32]
+} as IItemStack[][IItemStack];
+
+for inputstack, results in nontiered_recipes {
+	var recipeBuilder = disassembler_recipe_map.recipeBuilder()
+		.duration(2*60*20*pow2[1])
+		.EUt(128)
+		.inputs(inputstack);
+	var guaranteed_outputs as IItemStack[] = [] as IItemStack[];
+	val component_guaranteed_frac as double = 0.5D as double;
+	val component_chance as double = 0.6D as double;
+	for outputstack in results {
+		val component_item = outputstack.withAmount(1);
+		val component_amount as double = outputstack.amount as double;
+		var component_guaranteed_amount as int = (component_amount*component_guaranteed_frac) as int;
+		if(component_guaranteed_amount == 0 && component_guaranteed_frac != 0 && component_amount >= 1.0D){
+			component_guaranteed_amount += 1;
+		}
+		val component_chanced_amount as int = (component_amount - component_guaranteed_amount) as int;
+		if(component_guaranteed_amount > 0){
+			guaranteed_outputs += component_item*component_guaranteed_amount;
+		}
+		if(component_chanced_amount > 0){
+			recipeBuilder.chancedOutput(component_item*component_chanced_amount, (component_chance*10000.0D) as int, ((1.0D-component_chance)*1300.0D) as int);
+		}
+	}
+	if(guaranteed_outputs.length > 0){
+		recipeBuilder.outputs(guaranteed_outputs);
+	}
+	recipeBuilder.buildAndRegister();
 }
 
 print("----------------Disassembler End-------------------");

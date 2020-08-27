@@ -23,7 +23,7 @@
 		items: [{
 			item: "gregtech:wire_coil 1 7"
 		}],
-		count: 32L
+		count: 16L
 	},
 	{
 		uid: "614fbf54",
@@ -39,7 +39,7 @@
 		items: [{
 			item: "gregtech:machine_casing 1 6"
 		}],
-		count: 121L
+		count: 50L
 	},
 	{
 		uid: "e3160d5b",
@@ -58,5 +58,23 @@
 		type: "item",
 		item: "gregtech:machine 1 819",
 		count: 2
+	},
+	{
+		uid: "e7752422",
+		type: "item",
+		item: "gregtech:machine_casing 1 6",
+		count: 64
+	},
+	{
+		uid: "1d526972",
+		type: "item",
+		item: "gregtech:machine_casing 1 6",
+		count: 7
+	},
+	{
+		uid: "7a7e60ae",
+		type: "item",
+		item: "gregtech:wire_coil 1 7",
+		count: 16
 	}]
 }

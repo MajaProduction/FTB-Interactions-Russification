@@ -20,7 +20,7 @@
 			id: "bloodmagic:activation_crystal",
 			Damage: 1s
 		}],
-		ignore_nbt: 1b
+		ignore_nbt: 2b
 	},
 	{
 		uid: "61ea669e",
@@ -34,6 +34,31 @@
 				orb: "bloodmagic:master"
 			}
 		}],
-		ignore_nbt: 1b
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "f142b6ad",
+		type: "item",
+		item: {
+			id: "draconicevolution:draconic_spawner",
+			tag: {
+				BCTileData: {
+					BCManagedData: {
+						spawnerTier: 1b,
+						mobSoul: {
+							id: "minecraft:air",
+							Count: 2b,
+							tag: {
+								Animal: {
+									id: "minecraft:ghast"
+								},
+								No_Place: 1b
+							},
+							Damage: 0s
+						}
+					}
+				}
+			}
+		}
 	}]
 }

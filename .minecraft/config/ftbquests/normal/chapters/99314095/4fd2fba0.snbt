@@ -1,0 +1,27 @@
+{
+	title: "{interactions.ayo.coil.tier0.title}",
+	x: -10.0d,
+	y: 2.0d,
+	shape: "square",
+	description: "{interactions.ayo.coil.tier0.description}",
+	text: [
+		"{interactions.ayo.coil.tier0.text.0}"
+	],
+	dependencies: [
+		"c13fb853"
+	],
+	tasks: [{
+		uid: "3457266b",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "0ef19697",
+		type: "item",
+		item: "gregtech:wire_coil",
+		count: 8
+	}]
+}

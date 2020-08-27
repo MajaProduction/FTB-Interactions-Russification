@@ -1,0 +1,23 @@
+{
+	x: -10.714285714285715d,
+	y: 11.94642857142857d,
+	shape: "diamond",
+	dependencies: [
+		"8f3eb52c"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "5c375c60",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 1 8"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "48b44326",
+		type: "item",
+		item: "gregtech:wire_coil 1 8",
+		count: 24
+	}]
+}

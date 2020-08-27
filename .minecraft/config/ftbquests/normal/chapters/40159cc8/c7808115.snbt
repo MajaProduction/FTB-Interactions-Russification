@@ -1,6 +1,6 @@
 {
-	x: 8.0d,
-	y: -15.0d,
+	x: 10.0d,
+	y: -16.0d,
 	description: "{interactions.40159cc8.c7808115.description}",
 	dependencies: [
 		"8d952225"

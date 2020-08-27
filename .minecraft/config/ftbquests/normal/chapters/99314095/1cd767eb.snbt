@@ -25,9 +25,9 @@
 		item: "harvestcraft:springfieldcashewchickenitem"
 	},
 	{
-		uid: "3a8b28c2",
+		uid: "3caf68f1",
 		type: "item",
-		item: "gregtech:meta_item_1 1 10200",
-		count: 8
+		item: "gregtech:meta_item_1 1 10032",
+		count: 16
 	}]
 }

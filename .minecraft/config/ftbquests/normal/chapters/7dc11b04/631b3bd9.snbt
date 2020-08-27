@@ -23,5 +23,11 @@
 		type: "item",
 		item: "animus:bloodapple",
 		count: 8
+	},
+	{
+		uid: "3340ec1f",
+		type: "item",
+		item: "bloodmagic:blood_rune 1 3",
+		count: 8
 	}]
 }

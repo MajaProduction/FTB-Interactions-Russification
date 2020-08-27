@@ -13,8 +13,14 @@
 		}]
 	}],
 	rewards: [{
-		uid: "b3375031",
+		uid: "4b5b5414",
 		type: "item",
-		item: "bloodmagic:blood_tank"
+		item: "minecraft:ghast_tear"
+	},
+	{
+		uid: "8e683365",
+		type: "item",
+		item: "bloodmagic:blood_rune 1 5",
+		count: 4
 	}]
 }

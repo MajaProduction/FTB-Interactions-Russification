@@ -17,5 +17,11 @@
 		type: "item",
 		item: "bhc:red_heart_canister",
 		count: 2
+	},
+	{
+		uid: "26d138e8",
+		type: "item",
+		item: "bloodmagic:blood_rune 1 2",
+		count: 4
 	}]
 }

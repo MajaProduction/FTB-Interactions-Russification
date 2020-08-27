@@ -1,0 +1,32 @@
+{
+	title: "{interactions.metallurgymaster.plutonium.title}",
+	x: -1.5d,
+	y: -3.5d,
+	shape: "rsquare",
+	description: "{interactions.metallurgymaster.plutonium.description}",
+	text: [
+		"{interactions.metallurgymaster.plutonium.text.0}"
+	],
+	dependencies: [
+		"6f38c8a5",
+		"d94602f8"
+	],
+	tasks: [{
+		uid: "4fa62770",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 53"
+		}]
+	}],
+	rewards: [{
+		uid: "f0026ff4",
+		type: "item",
+		item: "gregtech:meta_item_1 1 2053",
+		count: 16
+	},
+	{
+		uid: "a786e69b",
+		type: "item",
+		item: "harvestcraft:paradiseburgeritem"
+	}]
+}

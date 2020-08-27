@@ -1,0 +1,14 @@
+{
+	x: 11.0d,
+	y: -16.0d,
+	dependencies: [
+		"8d952225"
+	],
+	tasks: [{
+		uid: "40468944",
+		type: "item",
+		items: [{
+			item: "advancedrocketry:crystal 1 4"
+		}]
+	}]
+}

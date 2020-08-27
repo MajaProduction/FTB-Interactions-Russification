@@ -48,5 +48,16 @@
 			},
 			Damage: 1s
 		}
+	},
+	{
+		uid: "3802d393",
+		type: "item",
+		item: "apotheosis:weapon_book",
+		count: 5
+	},
+	{
+		uid: "27a8dac9",
+		type: "xp_levels",
+		xp_levels: 60
 	}]
 }

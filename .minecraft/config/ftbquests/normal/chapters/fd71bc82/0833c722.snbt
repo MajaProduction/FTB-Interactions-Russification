@@ -1,0 +1,77 @@
+{
+	title: "{interactions.metallurgyev.implosioncompressor.title}",
+	x: -6.5d,
+	y: 0.5d,
+	shape: "square",
+	description: "{interactions.metallurgyev.implosioncompressor.description}",
+	text: [
+		"{interactions.metallurgyev.implosioncompressor.text.0}",
+		"{interactions.metallurgyev.implosioncompressor.text.1}",
+		"{interactions.metallurgyev.implosioncompressor.text.2}"
+	],
+	dependencies: [
+		"56288e7c"
+	],
+	tasks: [{
+		uid: "e6ed3e66",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 513"
+		}]
+	},
+	{
+		uid: "78084316",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 1 4"
+		}],
+		count: 12L
+	},
+	{
+		uid: "3a355c2a",
+		type: "item",
+		items: [{
+			item: "minecraft:tnt"
+		}]
+	},
+	{
+		uid: "1f96a545",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 734"
+		},
+		{
+			item: "gregtech:machine 1 724"
+		},
+		{
+			item: "gregtech:machine 1 714"
+		}]
+	}],
+	rewards: [{
+		uid: "5c5693f9",
+		type: "item",
+		item: "gregtech:metal_casing 1 4",
+		count: 10
+	},
+	{
+		uid: "a828ff43",
+		type: "item",
+		item: "gregtech:machine 1 710"
+	},
+	{
+		uid: "02a45787",
+		type: "item",
+		item: "gregtech:machine 1 711"
+	},
+	{
+		uid: "84c58c21",
+		type: "item",
+		item: "minecraft:tnt",
+		count: 64
+	},
+	{
+		uid: "864eb5e2",
+		type: "xp_levels",
+		xp_levels: 30
+	}]
+}

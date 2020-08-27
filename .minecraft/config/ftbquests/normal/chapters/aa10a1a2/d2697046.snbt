@@ -1,7 +1,7 @@
 {
 	title: "{interactions.aa10a1a2.d2697046.title}",
-	x: -0.5d,
-	y: -1.0d,
+	x: -0.5357142857142918d,
+	y: 0.9464285714285765d,
 	shape: "diamond",
 	description: "{interactions.aa10a1a2.d2697046.description}",
 	dependencies: [
@@ -64,5 +64,22 @@
 		type: "item",
 		item: "gregtech:meta_item_2 1 32496",
 		count: 4
+	},
+	{
+		uid: "923fb8b4",
+		type: "item",
+		item: "gregtech:turbine_casing 1 6",
+		count: 60
+	},
+	{
+		uid: "60569852",
+		type: "item",
+		item: "gregtech:machine 1 520",
+		count: 2
+	},
+	{
+		uid: "6b90fbf1",
+		type: "xp_levels",
+		xp_levels: 50
 	}]
 }

@@ -30,5 +30,11 @@
 				TrophyColorRed: 255
 			}
 		}
+	},
+	{
+		uid: "47aad2ef",
+		type: "item",
+		item: "gregtech:turbine_casing 1 6",
+		count: 16
 	}]
 }

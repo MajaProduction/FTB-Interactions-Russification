@@ -21,7 +21,7 @@
 		items: [{
 			item: "gregtech:compressed_3 1 10"
 		}],
-		count: 15L
+		count: 8L
 	},
 	{
 		uid: "127177f9",
@@ -59,5 +59,22 @@
 		items: [{
 			item: "libvulpes:productgem"
 		}]
+	}],
+	rewards: [{
+		uid: "6f3910df",
+		type: "item",
+		item: "gregtech:compressed_3 1 10",
+		count: 7
+	},
+	{
+		uid: "f8020d17",
+		type: "item",
+		item: "advancedrocketry:oxygenscrubber",
+		count: 2
+	},
+	{
+		uid: "8f77da4f",
+		type: "item",
+		item: "advancedrocketry:oxygenvent"
 	}]
 }

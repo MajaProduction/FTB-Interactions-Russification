@@ -31,7 +31,7 @@
 		items: [{
 			item: "gregtech:machine 1 712"
 		}],
-		count: 2L
+		count: 3L
 	},
 	{
 		uid: "248828ef",
@@ -47,7 +47,7 @@
 		items: [{
 			item: "gregtech:metal_casing 1 6"
 		}],
-		count: 23L
+		count: 22L
 	},
 	{
 		uid: "081f1a79",
@@ -81,5 +81,29 @@
 		type: "item",
 		item: "harvestcraft:ploughmanslunchitem",
 		count: 3
+	},
+	{
+		uid: "100a4191",
+		type: "item",
+		item: "gregtech:turbine_casing 1 2",
+		count: 4
+	},
+	{
+		uid: "6058889c",
+		type: "item",
+		item: "gregtech:metal_casing 1 6",
+		count: 23
+	},
+	{
+		uid: "e727b220",
+		type: "item",
+		item: "gregtech:multiblock_casing",
+		count: 8
+	},
+	{
+		uid: "d2cf2dac",
+		type: "item",
+		item: "gregtech:meta_item_1 1 32603",
+		count: 8
 	}]
 }

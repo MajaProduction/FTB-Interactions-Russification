@@ -1,7 +1,7 @@
 {
     "machine": "gem_refiner",
     "registryName": "gem_refiner_GreenSapphire",
-    "recipeTime": 240,
+    "recipeTime": 120,
     "requirements": [ 
 		{
 			"type": "mana",
@@ -12,7 +12,7 @@
 			"type": "mekheat",
 			"io-type": "input",
 			"temperatureRequiredMin": 750,
-			"temperature": 700
+			"temperature": 250
 		},		
         {
             "type": "item",

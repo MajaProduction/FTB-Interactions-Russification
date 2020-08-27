@@ -1,0 +1,72 @@
+{
+	x: -6.5d,
+	y: 5.0d,
+	dependencies: [
+		"0833c722",
+		"2e5abfbb",
+		"4bb9cb0f"
+	],
+	tasks: [{
+		uid: "97367ea6",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32435"
+		}]
+	}],
+	rewards: [{
+		uid: "c63f8910",
+		type: "item",
+		item: "gregtech:meta_item_2 1 32434",
+		count: 8
+	},
+	{
+		uid: "c4a7646c",
+		type: "item",
+		item: "gregtech:machine 1 685"
+	},
+	{
+		uid: "174e8029",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5570085101611273969L,
+					AS_Amulet_HolderMost: 5678865977197479355L
+				}
+			},
+			id: "gregtech:meta_item_2",
+			tag: {
+				ench: [{
+					lvl: 3s,
+					id: 60s
+				},
+				{
+					lvl: 5s,
+					id: 45s
+				},
+				{
+					lvl: 3s,
+					id: 22s
+				},
+				{
+					lvl: 7s,
+					id: 11s
+				},
+				{
+					lvl: 10s,
+					id: 16s
+				},
+				{
+					lvl: 10s,
+					id: 40s
+				}],
+				RepairCost: 1,
+				display: {
+					Name: "Ame-no-Murakumo-no-Tsurugi"
+				},
+				Charge: 4000000L
+			},
+			Damage: 32577s
+		}
+	}]
+}

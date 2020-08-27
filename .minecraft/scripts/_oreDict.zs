@@ -151,6 +151,7 @@ for oreDictEntry, items in blocksDisabled {
 <ore:batterySodiumSmall>.add(batterySmallSodium);
 
 	#flour - merge with dustWheat
+<ore:bonemeal>.addAll(<ore:dustBone>);
 <ore:dustWheat>.remove(<enderio:item_material:21>);
 <ore:foodFlour>.addAll(<ore:dustWheat>);
 
