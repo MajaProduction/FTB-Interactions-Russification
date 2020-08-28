@@ -1,0 +1,104 @@
+2.0.7
+
+
+Mod Removals:
+		
+Mod Additions:
+	AE2 network visualizer - AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal
+	AIImprovements-1.12-0.0.1b3 (reduces mob AI overhead substantially)
+	
+Mod updates:
+	logisticspipes-0.10.3.51
+	Hit With Axe-1.12.2-1.5.1
+	gregtech-1.12.2-1.9.4.541
+
+	Gregtech update:
+	* Added Bone Meal recipe to Mortar (#1178) - LAGIdiot
+	* Added Crafting Station to JEI list of crafting tables (#1186) - LAGIdiot
+	* Updated Bone Meal recipes to work with Vanilla MC Bone Meal (#1178) - LAGIdiot
+	* Updated Crafting Station GUI (#1186) - LAGIdiot
+	    * Recipes from JEI can be clicked to crafting grid
+	    * Fixed scrolling via mouse wheel
+	    * Fixed scroll bar rendering outside of GUI
+	    * Fixed too many empty rows being rendered on Item List tab
+	    * Fixed Item List not correctly responding to removal/destruction of adjacent container
+	* Updated Energy Crystal and Lapotron Crystal capacity (#1189) - LAGIdiot
+	* Fixed Blaze Powder and Bone Meal amount from Macerating recipes (#1178) - LAGIdiot
+	* Fixed some Vanilla MC blocks having duplicate recipes (#1188) - LAGIdiot
+
+Config Changes:	
+	increased eldritch will ritual to 3x3 chunks instead of 1
+	added tooltips for all constellation papers to assist in crafting undiscovered papers
+	uncovered lossless cables will now shock you again when powered
+	Dense ores with no use have been removed from mining missions and replaced with useful ores
+	The gaseous effect from hot or not has been removed. The levitation effect was just too annoying as the game progressed and you're 
+	configuring many different fluid types.
+	
+
+Quest Changes:
+	fixed ev chapter title localization
+	Me controller reward now correctly grants the controllers, it is now a team reward so it is only awarded once per team
+	corrected fluid type storage amount on fluid cells
+	charcoal byproducts quest now all properly accept cells
+	ethylene quest now accept polyethylene as well
+	polywhatsit chicken now awards a basic fluid solidifier and ingot mold	
+	draconic core quest now gives out a wyvern boosted spawner instead of basic level
+	flux quest now gives a few free flux cores
+	Flux controller quest now gives 2 input and output nodes
+	clarified the space station launch quest text a bit
+	added a quest explaining the creation and automation of liquid antimatter
+	Completing the DML questline now grants a glitch soul
+	added various new rewards
+
+Recipe Changes:
+	Community contribute script to convert between ceu/cefs, thanks to Kortako for this one
+	ME dense cable uncrafting set to 4 instead of 8 cables
+	menril berries added to fruit and berry oredict
+	added recipe to cut ender shards with lubricant
+	You can now quick craft between skystone variants with a simple shapeless craft
+	bismuth transmutation move to botania alchemy instead of starlight transmutation
+	removed impossible golden apply deconstruction recipes from macerator/arc furnace, you can still melt them down in the fluid extractor
+	added hay barrel recipe to forge hammer
+	cobaltite clusters now yield 6 instead of 2
+	glowstone and naquadah doped wafters now output more printed silicon per craft
+	relic apple now requires eye of ender instead of mana pearl
+	enderium lowered to 2500k cooking temp
+	fixed citrate enhancement recipe
+	added arc furnace recipe to convery polyethylene sheet to ingot
+	me glass cable recipe now outputs 4 per craft instead of 1
+	enderio me conduits now craft 2 per craft and are crafted with me glass cables and conduit binder (effectively making them the same price as me glass cables+conduit binder)
+	Crystalline Alloy ingots are now made with manasteel instead of crystal chunks
+	added an assembler recipe to craft wool from woven cotton
+	brine tower heater quest now awards a mrAmericaChick 
+	Euclydes artifact now requires 2 Demonic Slates
+	Granite no longer gives thorium as a maceration byproduct
+	concrete now solidifies to 4 blocks with 576mb
+	concrete chicken now requires 10368mb of concrete to craft instead of 10 buckets
+	concrete egg now makes 72mb of concrete instead of 100
+	polywhatsit egg now produces 16mb of polycaprolactam instead of 10	
+	plastic chicken now requires 2160mb of polyethylene to craft instead of 2000
+	you can now shape craft between flux points and plugs
+	advanced blood magic runes crafted in the runic altar now yield 2 runes per craft instead of 1
+	added maceration recipes for blitz, basalz and blizz rods to dust
+
+	Blood Magic Rebalance:
+	Several useful sigil and utilities have been made accessible pre-space
+	Sigil of the Phantom chains is now craftable at T2 blood magic
+	Air reagent no longer requires skystone (now requires aluminium foil)
+	Whirlwind sigil now requires a t3 slate instead of t5
+	Phantom Bridge sigil now craftable with t3 slate instead of 5
+
+Multiblocks:
+	Added a new disassembler multiblock! This will allow you to recycle some of your old components to reclaim subcomponents directly. This is included with an 
+	initial recipe list that we'll expand upon and include other mod items in future updates. Special thanks to Hacatu for all their work on this!
+
+Oregen:
+	No Changes
+
+Dungeons:
+   	Blank astral sorcery constellation papers added to moon+ dungeons
+
+General:
+	Players with incorrect staging for Euclydes, Luna or Aurellia will be ejected to their current overworld coordinates
+
+

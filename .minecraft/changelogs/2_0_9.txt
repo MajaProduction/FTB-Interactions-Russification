@@ -1,0 +1,86 @@
+Hotfix for 2.0.8
+Fixed logistics pipes broken scripts
+downgraded minetogether to 2.2.5 to resolve server crash issues for some people
+
+
+2.0.8
+
+
+Mod Removals:
+	No Changes
+		
+Mod Additions:
+	No Changes
+	
+Mod updates:
+	backportedflora-1.4
+	Controlling-3.0.10
+	gregtech-1.12.2-1.10.0.54
+	lazy-ae2-1.12.2-1.1.20
+	libnine-1.12.2-1.1.9
+	logisticspipes-0.10.3.62
+	LogisticsBridge-1.3.11
+	minetogether-1.10.2-2.3.0.Beta1
+	randompatches-1.12.2-1.22.1.2
+	Shadows_of_Greg-1.12.2-2.14.0
+	Xaeros_Minimap_20.20.1_Forge_1.12
+	XaerosWorldMap_1.10.1_Forge_1.12
+
+Config Changes:	
+	No Changes
+
+Quest Changes:
+	added dynanism quest explaining how they are created along with a choice reward gem
+	added 8 sacrifice runes as a reward for the weak blood orb quest
+	added more rewards in bloodmagic quest line
+	Added vastly increased rewards in the power production section for when you start getting into fusion and plasma
+	Fixed incorrectly registered nbt data on ender eye and awakened activation sigils
+	added quest and reward for implosion compressor (iridium alloy, ev+ metallurgy)
+	Added master metallurgy quest and rewards for Yttrium Barium Cuperate
+	Added master metallurgy quest for Vanadium Gallium ingots
+	Ae crafting storage quest now accepts any size crafting storage
+	Added a questline for upgrading your EBF Coils
+	add quests for high tier mettalurgy, plutonium 241, reinforced iridium plates
+	added more diesel block multiblock parts as diesel gen quest reward to help fascilitate building multiple multiblock diesel gens
+	add diesel engine lubricant notice to the quest
+	ore guide for the orbital miner similar how I do the ores in the other pages
+
+Recipe Changes:
+	Fixed bonemeal oredict missing from several recipes
+	fixed recipe for slab ender elevators
+	Community contribute fix for AA ring crafting, thanks to Hjaldar
+	Added recipe for AE visualizer tool, thanks Hachuurui, you can Checkout his Youtube Interactions series
+	added packager recipes for AA crystal shards
+	Logistics fluid pipes are now cheaper to craft, 1 rubber ring and a basic pipe each instead of gold, buckets and other components for every pipe
+	New Open computer recipes for microchips tier 1-3 in the assembly. They now yield 4 per craft and support proper oredicted circuits
+	Fixed polyethylene sheet to ingot recipe in arc furnace
+	Added pre-nether observer recipes
+	Added open computer cable recipes
+	Infused nitrodiesel has been lowered to a 2-1 cetane to liquid starlight ratio instead of 5-1
+	vitrified sand got some new recipes
+	salt peter can now be autoclaved with liquid starlight from salt
+	GT Drums can now be made in an assembler
+	added assembler recipe for assembly line casing
+	GT Multiblock Diesel engine now requires quantum processor (EV Tier) instead of Quantum Assembly (IV Tier) circuit
+	dark matter recipe now outputs 4 instead of 1 per craft
+	All gem refiner recipes are now 50% faster
+	the gem refiner per-operation heat requirement has been lowered to 250 from 700 mekanism thermal energy
+	added recipe to the gem refiner to convert carbon into coal
+	Normal activation crystal now requires t2 instead of t3
+	Awakened Activation sigil infusion recipe now requires t2 slates instead of t4
+	dusk ritual diviner now has a modified, cross progression recipe that is doable at t2 bloodmagic
+	add an extra recipe where you insert 64 planks on circuit 8 and get 4 chest at shorter time
+
+Multiblocks:
+	The dissassembler multiblock should now preview correctly
+
+Oregen:
+	No Changes
+
+Dungeons:
+	Made blank constellation papers in moon/euclydes/aurellia dungeons more common	
+	multiblock thaumatoriums no longer drop in dungeons, the individualm unformed blocks now do instead
+General:
+	No Changes
+
+

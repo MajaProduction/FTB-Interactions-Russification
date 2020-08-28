@@ -1,0 +1,86 @@
+2.0.2
+
+New Void Speedrun challenge video! Califerbopbop has replaced Tazz's fastest speedrun with a link to their speed run
+current record time is 1 hour 9 minutes. See the first quest tab for the video and submit yours on our discord if your
+can do it faster.
+
+Mod Removals:
+	None this time
+	
+Mod Additions:
+	None this time
+
+Mod updates:
+
+
+	FTBQuests-1.9.0.6-> Lots of great new questbook features, thanks Latvian
+		-> All quests now have an arrow showing a clickable list of dependencies for the quest and will even link to other pages!
+
+	CryingObsidian-1.12.2-1.2.1 -> added whitelist for advanced crying obsidian respawning
+	Cyclic-1.12.2-1.20.3.jar
+	enderutilities-1.12.2-0.7.15 -> fixes unbreakable barrel issue
+	fluxnetworks-1.12.2-4.0.14-31-> fixes some rendering glitches
+	logisticspipes-0.10.3.50-> Lots of bug fixes
+	multiblocktweaker-1.12.2-stable-1.1.0
+	randompatches-1.12.2-1.22.0.0	
+	roughmobsrevamped-1.12.2-2.3.17->bug fixes
+	Sledgehammer-1.12.2-2.0.6->Fixed Primitive Crafting exploit.
+	Xaeros_Minimap_20.15.3_Forge_1.12
+	XaerosWorldMap_1.7.3_Forge_1.12
+	wizardry-0.11.0->Tons of new stuff and bug fixes 
+	
+Config Changes:
+	Fixed Twerk chance from 100% to 45%
+	added tooltips for zensummoner explaining catalyst
+	fixed some formulas for higher level enchants in apthoeosis configs
+	Hot or Not Mitts now have twice the durability
+
+Quest Changes:
+	fixed celestial altar dependencies, added quest descriptions for rock crystals and irredescent altar
+	added quest to unlock all building gadget schematics for interactions custom multiblocks. 
+	Added a super night vision quest to the overworld tab
+	Added building gadgets questline
+	Fixed several nbt matching issues on quests
+	many quests that required a specific tier machine can now accept up to 2 tiers higher as valid quest completion
+	Fixed text on salis mundis creation quest
+	
+Recipe Changes:
+	Added a new alternate recipe for all hotIngots to be cooled in half their normal time by using gellid cryotheum
+	Dense ore now correctly gives 2 clusters instead of 1
+	Fixed all smelting recipes for the hellfire kiln
+	Lowered gating on all building gadget devices to early LV
+	chisels are no longer meltable in the melter
+	fixed 4x speculation core recipe
+	wood gear burn time reduced to 400 from 1200
+	fixed recipe for refined glowstone ingot
+	Added new recipe for several ender utilitiy items:
+		Ender Bow
+		Ender Bag
+		Barrel Structural Upgrade
+		Ender Bucket
+	Basic Ender alloy is now craftable enabling the following recipes from ender utiltiies:
+		Sound Block
+		Phasing Block
+		Inventory Swapper
+		Handy chest (all variants)
+		Jailer Module
+		Memory card (6 items)
+		Chair Wand
+		Ender Infuser
+	Enhanced Ender alloy is now craftable enabling the following recipes:
+		Syringe
+		Item pickup manager
+		Handy Chest (large)
+		Energy Bridge Resonator
+		
+Multiblocks:
+	Fixed missing piece of obsidian on the bottom of the Hellfire Kiln
+
+Oregen:
+	No Changes
+
+Dungeons:
+	No Changes
+   
+General:
+	Updated included readme for server setup
