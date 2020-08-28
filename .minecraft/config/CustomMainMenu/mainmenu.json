@@ -203,13 +203,6 @@
     }
   },
   "other": {
-    "splash-text": {
-      "posX": 90,
-      "posY": 70,
-      "color": -256,
-      "alignment": "top_center",
-      "texts": "file:modpack:texts/splashes.txt"
-    },
     "background": {
       "image": "",
       "slideshow": {
